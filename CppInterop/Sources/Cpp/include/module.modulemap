@@ -1,0 +1,4 @@
+module Cpp {
+  export *
+  header "print.h"
+}
