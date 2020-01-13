@@ -1,0 +1,48 @@
+(source_file "app/add.swift"
+  (func_decl range=[app/add.swift:1:1 - line:3:1] "add(_:_:)" interface type='(Int, Int) -> Int' access=internal
+    (parameter_list
+      (parameter "a" interface type='Int')
+      (parameter "b" interface type='Int') range=[app/add.swift:1:9 - line:1:28])
+    (result
+      (type_ident
+        (component id='Int' bind=Swift.(file).Int)))
+    (brace_stmt range=[app/add.swift:1:37 - line:3:1]
+      (return_stmt range=[app/add.swift:2:3 - line:2:14]
+        (binary_expr type='Int' location=app/add.swift:2:12 range=[app/add.swift:2:10 - line:2:14] nothrow
+          (dot_syntax_call_expr implicit type='(Int, Int) -> Int' location=app/add.swift:2:12 range=[app/add.swift:2:12 - line:2:12] nothrow
+            (declref_expr type='(Int.Type) -> (Int, Int) -> Int' location=app/add.swift:2:12 range=[app/add.swift:2:12 - line:2:12] decl=Swift.(file).Int extension.+ function_ref=unapplied)
+            (type_expr implicit type='Int.Type' location=app/add.swift:2:12 range=[app/add.swift:2:12 - line:2:12] typerepr='Int'))
+          (tuple_expr implicit type='(Int, Int)' location=app/add.swift:2:10 range=[app/add.swift:2:10 - line:2:14]
+            (declref_expr type='Int' location=app/add.swift:2:10 range=[app/add.swift:2:10 - line:2:10] decl=add.(file).add(_:_:).a@app/add.swift:1:12 function_ref=unapplied)
+            (declref_expr type='Int' location=app/add.swift:2:14 range=[app/add.swift:2:14 - line:2:14] decl=add.(file).add(_:_:).b@app/add.swift:1:22 function_ref=unapplied))))))
+  (top_level_code_decl range=[app/add.swift:5:1 - line:5:14]
+    (brace_stmt implicit range=[app/add.swift:5:1 - line:5:14]
+      (pattern_binding_decl range=[app/add.swift:5:1 - line:5:14]
+        (pattern_typed type='Int'
+          (pattern_named type='Int' 'a')
+          (type_ident
+            (component id='Int' bind=Swift.(file).Int)))
+        (integer_literal_expr type='Int' location=app/add.swift:5:14 range=[app/add.swift:5:14 - line:5:14] value=2 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**))
+))
+  (var_decl range=[app/add.swift:5:5 - line:5:5] "a" type='Int' interface type='Int' access=internal let readImpl=stored immutable)
+  (top_level_code_decl range=[app/add.swift:6:1 - line:6:14]
+    (brace_stmt implicit range=[app/add.swift:6:1 - line:6:14]
+      (pattern_binding_decl range=[app/add.swift:6:1 - line:6:14]
+        (pattern_typed type='Int'
+          (pattern_named type='Int' 'b')
+          (type_ident
+            (component id='Int' bind=Swift.(file).Int)))
+        (integer_literal_expr type='Int' location=app/add.swift:6:14 range=[app/add.swift:6:14 - line:6:14] value=3 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**))
+))
+  (var_decl range=[app/add.swift:6:5 - line:6:5] "b" type='Int' interface type='Int' access=internal let readImpl=stored immutable)
+  (top_level_code_decl range=[app/add.swift:7:1 - line:7:17]
+    (brace_stmt implicit range=[app/add.swift:7:1 - line:7:17]
+      (pattern_binding_decl range=[app/add.swift:7:1 - line:7:17]
+        (pattern_named type='Int' 'c')
+        (call_expr type='Int' location=app/add.swift:7:9 range=[app/add.swift:7:9 - line:7:17] nothrow arg_labels=_:_:
+          (declref_expr type='(Int, Int) -> Int' location=app/add.swift:7:9 range=[app/add.swift:7:9 - line:7:9] decl=add.(file).add@app/add.swift:1:6 function_ref=single)
+          (tuple_expr type='(Int, Int)' location=app/add.swift:7:12 range=[app/add.swift:7:12 - line:7:17] names='',''
+            (declref_expr type='Int' location=app/add.swift:7:13 range=[app/add.swift:7:13 - line:7:13] decl=add.(file).a@app/add.swift:5:5 function_ref=unapplied)
+            (declref_expr type='Int' location=app/add.swift:7:16 range=[app/add.swift:7:16 - line:7:16] decl=add.(file).b@app/add.swift:6:5 function_ref=unapplied))))
+))
+  (var_decl range=[app/add.swift:7:5 - line:7:5] "c" type='Int' interface type='Int' access=internal let readImpl=stored immutable))

@@ -1,0 +1,2002 @@
+*** SIL module before Guaranteed Passes ***
+sil_stage raw
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $*** SIL module before Guaranteed Passes ***
+sil_stage raw
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil [ossa] @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil [ossa] @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+Int8>>>) -> Int32 {
+bb0(bb0(%0%0 : $Int32,  : $Int32, %1 : $%1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):
+  >):
+  alloc_global alloc_global @$s3add1aSivp@$s3add1aSivp                      // id: %2
+                      // id: %2
+  %3 = global_addr   %3 = global_addr @$s3add1aSivp : $*@$s3add1aSivp : $*Int          // usersInt          // users: %18, %: %18, %88
+  %4
+  %4 = integer_literal  = integer_literal $Builtin.IntLiteral, $Builtin.IntLiteral, 2     // user: 2     // user: %7
+  %5%7
+  %5 = metatype $@thin  = metatype $@thin Int.Type                   // user: %7Int.Type                   // user: %7
+  // function_ref 
+  // function_ref Int.init(_builtinIntegerLiteral:)
+  %Int.init(_builtinIntegerLiteral:)
+  %6 = function_ref @6 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC : $$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int // user, @thin Int.Type) -> Int // user: %7
+  : %7
+  %7 = apply %7 = apply %6(%6(%4, %5%4, %5) : $@convention(method) : $@convention(method) (Builtin.IntLiteral, @thin ) (Builtin.IntLiteral, @thin Int.Type) -> Int // user: Int.Type) -> Int // user: %8
+  store %8
+  store %7 to [trivial] %7 to [trivial] %3 : $%3 : $*Int                *Int                // id: %8
+  alloc_global// id: %8
+  alloc_global @$s3add1bSivp                      // id: %9 @$s3add1bSivp                      // id: %9
+  %10 = 
+  %10 = global_addr @$s3add1bSivp : $*global_addr @$s3add1bSivp : $*Int         // users: %Int         // users: %19, %15
+19, %15
+  %11 = integer_literal   %11 = integer_literal $Builtin.IntLiteral, 3    // user$Builtin.IntLiteral, 3    // user: %14
+: %14
+  %12 = metatype   %12 = metatype $@thin Int.Type                  // user$@thin Int.Type                  // user: %14
+: %14
+  // function_ref Int.init(_builtinIntegerLiteral:)
+    // function_ref Int.init(_builtinIntegerLiteral:)
+  %13 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC : %13 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) $@convention(method) (Builtin.IntLiteral, @thin Int.Type(Builtin.IntLiteral, @thin Int.Type) -> Int // user: %14) -> Int // user: %14
+  %14 = 
+  %14 = apply %13(apply %13(%11, %12) : %11, %12) : $@convention(method) ($@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int // Builtin.IntLiteral, @thin Int.Type) -> Int // user: %15
+  user: %15
+  store %14 to [trivial] store %14 to [trivial] %10 : $*%10 : $*Int              // id: %Int              // id: %15
+  alloc_global @$s3add1cSivp                      15
+  alloc_global @$s3add1cSivp                      // id: %16
+  // id: %16
+  %17 = global_addr @$s3add1cSivp : %17 = global_addr @$s3add1cSivp : $*Int         // user$*Int         // user: %22
+  : %22
+  %18 = load [trivial] %18 = load [trivial] %3 : $*Int%3 : $*Int                 // user: %21                 // user: %21
+  %19 = load
+  %19 = load [trivial] %10 :  [trivial] %10 : $*Int                // $*Int                // user: %21
+  // function_ref user: %21
+  // function_ref add(_:_:)
+  %20add(_:_:)
+  %20 = function_ref @$s3addAAyS2i_SitF : $ = function_ref @$s3addAAyS2i_SitF : $@convention(thin) (Int@convention(thin) (Int, Int) -> Int // user: , Int) -> Int // user: %21
+  %21 = apply %20(%18, %19%21
+  %21 = apply %20(%18, %19) : $@convention(thin)) : $@convention(thin) (Int, Int) -> Int //  (Int, Int) -> Int // user: %22
+  storeuser: %22
+  store %21 to [trivial]  %21 to [trivial] %17 : $*%17 : $*Int              // id: %22Int              // id: %22
+  %23 = 
+  %23 = integer_literal $Builtin.Int32, 0integer_literal $Builtin.Int32, 0         // user: %24
+         // user: %24
+  %24 = struct   %24 = struct $Int32 (%$Int32 (%23 : $Builtin.Int3223 : $Builtin.Int32)      // user: %25)      // user: %25
+  return %24
+  return %24 : $Int32                              : $Int32                             // id: %25
+} // end sil function '// id: %25
+} // end sil function 'main'
+
+// add(_:_:)
+sil main'
+
+// add(_:_:)
+sil hidden [ossa] @$s3addAAyS2i_SitF : $@convention(thin)hidden [ossa] @$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> Int {
+ (Int, Int) -> Int {
+// %0                                             // users// %0                                             // users: %6, %: %6, %2
+// %12
+// %1                                             // users:                                              // users: %6, %%6, %3
+bb0(3
+bb0(%0 : $%0 : $Int, %1Int, %1 : $Int) : $Int):
+  debug_value %:
+  debug_value %0 : $Int0 : $Int, let, name "a", argno 1   // , let, name "a", argno 1   // id: %2id: %2
+  debug_value 
+  debug_value %1 : $%1 : $Int, let, name "b", argno 2Int, let, name "b", argno 2   // id: %3
+   // id: %3
+  %4 =   %4 = metatype $@thin Int.Type                   metatype $@thin Int.Type                   // user: %6
+// user: %6
+  // function_ref static Int.+ infix(_:_:)  // function_ref static Int.+ infix(_:_:)
+  %5 = function_ref 
+  %5 = function_ref @$sSi1poiyS2i_SitFZ : $@convention(@$sSi1poiyS2i_SitFZ : $@convention(method) (Int, method) (Int, Int, @thin Int.Type) -> Int // Int, @thin Int.Type) -> Int // user: %6
+  user: %6
+  %6 = apply %%6 = apply %5(%0, 5(%0, %1, %4%1, %4) : $@convention(method)) : $@convention(method) (Int, Int, @thin Int.Type (Int, Int, @thin Int.Type) -> Int // user: %7) -> Int // user: %7
+  return %
+  return %6 : $Int6 : $Int                                // id: %7
+                                // id: %7
+} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)
+sil [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $@convention(
+sil [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $@convention(method) (Int, Int, @thin method) (Int, Int, @thin Int.Type) -> Int
+
+// Int.init(_builtinIntegerLiteral:)Int.Type) -> Int
+
+// Int.init(_builtinIntegerLiteral:)
+sil [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(
+sil [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral, @thin Int.Typemethod) (Builtin.IntLiteral, @thin Int.Type) -> Int
+
+
+
+) -> Int
+
+
+
+  *** SIL module after #5, stage Guaranteed Passes, pass 3: CapturePromotion (capture-promotion)
+sil_stage raw
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+//   *** SIL module after #5, stage Guaranteed Passes, pass 3: CapturePromotion (capture-promotion)
+sil_stage raw
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil [ossa] c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil [ossa] @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional@main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0(bb0(%0 : $%0 : $Int32, %1Int32, %1 : $UnsafeMutablePointer<Optional : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>)<UnsafeMutablePointer<Int8>>>):
+  alloc_global @$s3add1aSivp                      // :
+  alloc_global @$s3add1aSivp                      // id: %2
+  id: %2
+  %3 = global_addr @$s3add1aSivp : %3 = global_addr @$s3add1aSivp : $*Int          // users: %18, %8
+  %4 = integer_literal$*Int          // users: %18, %8
+  %4 = integer_literal $Builtin.IntLiteral, 2      $Builtin.IntLiteral, 2     // user: %7
+  // user: %7
+  %5 = metatype %5 = metatype $@thin Int.Type$@thin Int.Type                   // user: %7
+  // function_ref                    // user: %7
+  // function_ref Int.init(_builtinIntegerLiteral:)
+  %6Int.init(_builtinIntegerLiteral:)
+  %6 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC : $ = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral, @convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int // user: @thin Int.Type) -> Int // user: %7
+  %%7
+  %7 = apply %67 = apply %6(%4, %(%4, %5) : $@convention(5) : $@convention(method) (Builtin.IntLiteral, @thin Int.Typemethod) (Builtin.IntLiteral, @thin Int.Type) -> Int // user: ) -> Int // user: %8
+  store %8
+  store %7 to [trivial] %%7 to [trivial] %3 : $*Int3 : $*Int                // id: %8                // id: %8
+  alloc_global @$s3add1bSivp                      
+  alloc_global @$s3add1bSivp                      // id: %9
+  // id: %9
+  %10 = global_addr @$s3add1bSivp%10 = global_addr @$s3add1bSivp : $*Int         //  : $*Int         // users: %19, users: %19, %15
+  %11%15
+  %11 = integer_literal $Builtin.IntLiteral = integer_literal $Builtin.IntLiteral, 3    // user: %14, 3    // user: %14
+  %12 = 
+  %12 = metatype $@thin Int.Typemetatype $@thin Int.Type                  // user: %14
+                  // user: %14
+  // function_ref Int.init(_builtinIntegerLiteral:)
+  %  // function_ref Int.init(_builtinIntegerLiteral:)
+  %13 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC : 13 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) ($@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Builtin.IntLiteral, @thin Int.Type) -> Int // user: %14Int // user: %14
+  %14 = apply
+  %14 = apply %13(% %13(%11, %12) : 11, %12) : $@convention(method) (Builtin.IntLiteral$@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int // user, @thin Int.Type) -> Int // user: %15
+  store : %15
+  store %14 to [trivial] %14 to [trivial] %10 : $*%10 : $*Int              // id: Int              // id: %15
+  alloc_global @%15
+  alloc_global @$s3add1cSivp                      // id: %16
+$s3add1cSivp                      // id: %16
+  %17 = global_addr @  %17 = global_addr @$s3add1cSivp : $*Int         $s3add1cSivp : $*Int         // user: %22// user: %22
+  %18 = 
+  %18 = load [trivial] %3load [trivial] %3 : $*Int                  : $*Int                 // user: %21
+  // user: %21
+  %19 = load [trivial] %19 = load [trivial] %10 : $*%10 : $*Int                // user: Int                // user: %21
+  // function_ref add(_:_:)%21
+  // function_ref add(_:_:)
+  %20 = function_ref 
+  %20 = function_ref @$s3addAAyS2i_SitF : $@convention(@$s3addAAyS2i_SitF : $@convention(thin) (Int, thin) (Int, Int) -> Int // user: Int) -> Int // user: %21
+  %21
+  %21 = apply %%21 = apply %20(%18, 20(%18, %19) : $%19) : $@convention(thin) (Int, Int@convention(thin) (Int, Int) -> Int // user: %22) -> Int // user: %22
+  store %21
+  store %21 to [trivial] %17 :  to [trivial] %17 : $*Int              // $*Int              // id: %22
+  id: %22
+  %23 = integer_literal %23 = integer_literal $Builtin.Int32, 0         // $Builtin.Int32, 0         // user: %24
+  user: %24
+  %24 = struct $%24 = struct $Int32 (%23Int32 (%23 : $Builtin.Int32) : $Builtin.Int32)      // user: %25
+      // user: %25
+  return %24  return %24 : $Int32                             //  : $Int32                             // id: %25
+} // end sil function 'mainid: %25
+} // end sil function 'main'
+
+// add(_:_:)
+sil hidden '
+
+// add(_:_:)
+sil hidden [ossa] @$s3addAAyS2i_SitF : $@convention(thin) [ossa] @$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> Int(Int, Int) -> Int {
+// %0                                              {
+// %0                                             // users: %6, // users: %6, %2
+// %%2
+// %1                                             // users: 1                                             // users: %6, %3
+bb0(%0 : %6, %3
+bb0(%0 : $Int, %$Int, %1 : $Int1 : $Int):
+  debug_value ):
+  debug_value %0 : $Int%0 : $Int, let, name "a", argno 1   // , let, name "a", argno 1   // id: %2
+  debug_value id: %2
+  debug_value %1 : $%1 : $Int, let, name "b", argno Int, let, name "b", argno 2   // id: %2   // id: %3
+  %43
+  %4 = metatype $@thin  = metatype $@thin Int.Type                   // user: %Int.Type                   // user: %6
+  // function_ref static Int.+ infix(_:_:)6
+  // function_ref static Int.+ infix(_:_:)
+  %5
+  %5 = function_ref @$sSi1poiyS2i_SitFZ : $ = function_ref @$sSi1poiyS2i_SitFZ : $@convention(method) (Int, Int@convention(method) (Int, Int, @thin Int.Type) -> Int // user, @thin Int.Type) -> Int // user: %6
+  %6: %6
+  %6 = apply %5 = apply %5(%0, (%0, %1, %4) : %1, %4) : $@convention(method) ($@convention(method) (Int, Int, @thin Int.Type) -> IntInt, Int, @thin Int.Type) -> Int // user: %7
+ // user: %7
+  return %6  return %6 : $Int : $Int                                // id: %7
+} // end sil function '$s3addAAyS2i_SitF                                // id: %7
+} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)
+sil [transparent] '
+
+// static Int.+ infix(_:_:)
+sil [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $@convention([serialized] @$sSi1poiyS2i_SitFZ : $@convention(method) (Int, Int, @thin method) (Int, Int, @thin Int.Type) -> Int
+
+// Int.init(_builtinIntegerLiteral:)Int.Type) -> Int
+
+// Int.init(_builtinIntegerLiteral:)
+sil [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(
+sil [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral, method) (Builtin.IntLiteral, @thin Int.Type) -> Int
+
+
+
+@thin Int.Type) -> Int
+
+
+
+  *** SIL module after #6, stage Guaranteed Passes, pass 4: AccessEnforcementSelection (access-enforcement-selection)
+sil_stage raw
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil [ossa] @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional  *** SIL module after #6, stage Guaranteed Passes, pass 4: AccessEnforcementSelection (access-enforcement-selection)
+sil_stage raw
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil [ossa] @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0(<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0(%0 : $%0 : $Int32, %1Int32, %1 : $UnsafeMutablePointer<Optional : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>)<UnsafeMutablePointer<Int8>>>):
+  alloc_global @$s3add1aSivp                      // :
+  alloc_global @$s3add1aSivp                      // id: %2
+  id: %2
+  %3 = global_addr @$s3add1aSivp : %3 = global_addr @$s3add1aSivp : $*Int          // user$*Int          // users: %18s: %18, %8
+  , %8
+  %4 = integer_literal $%4 = integer_literal $Builtin.IntLiteral, 2     // user: Builtin.IntLiteral, 2     // user: %7
+  %5%7
+  %5 = metatype $@thin Int = metatype $@thin Int.Type                   // user: %7.Type                   // user: %7
+  // function_ref Int.init(_builtinIntegerLiteral:)
+  
+  // function_ref Int.init(_builtinIntegerLiteral:)
+  %6 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC%6 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) : $@convention(method) (Builtin.IntLiteral, @thin Int (Builtin.IntLiteral, @thin Int.Type) -> Int // user: %.Type) -> Int // user: %7
+  %77
+  %7 = apply %6( = apply %6(%4, %5%4, %5) : $@convention(method)) : $@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int (Builtin.IntLiteral, @thin Int.Type) -> Int // user: %8
+ // user: %8
+  store %7 to   store %7 to [trivial] %3 : [trivial] %3 : $*Int                // id: %8
+  alloc_global @$s3add1bSivp                      // id: %9
+  $*Int                // id: %8
+  alloc_global @$s3add1bSivp                      // id: %9
+  %10 = global_addr @$s3add1bSivp : %10 = global_addr @$s3add1bSivp : $*Int         // users$*Int         // users: %19, %: %19, %15
+  %15
+  %11 = integer_literal $11 = integer_literal $Builtin.IntLiteral, 3    // user: Builtin.IntLiteral, 3    // user: %14
+  %%14
+  %12 = metatype $12 = metatype $@thin Int.Type                  // user: %@thin Int.Type                  // user: %14
+  // function_ref Int.init(_builtinIntegerLiteral:)
+14
+  // function_ref Int.init(_builtinIntegerLiteral:)
+  %13 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC  %13 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method : $@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> ) (Builtin.IntLiteral, @thin Int.Type) -> Int // user: %14Int // user: %14
+  %14 = apply 
+  %14 = apply %13(%11%13(%11, %12) : , %12) : $@convention(method) (Builtin.IntLiteral$@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int // user, @thin Int.Type) -> Int // user: %15
+  store : %15
+  store %14 to [trivial] %14 to [trivial] %10 : $*Int              %10 : $*Int              // id: %15
+  alloc_global// id: %15
+  alloc_global @$s3add1cSivp                      // id: %16 @$s3add1cSivp                      // id: %16
+  %17 = 
+  %17 = global_addr @$s3add1cSivp : $global_addr @$s3add1cSivp : $*Int         // user: *Int         // user: %22
+  %18%22
+  %18 = load [trivial] % = load [trivial] %3 : $*Int3 : $*Int                 // user: %21                 // user: %21
+  %19 = load 
+  %19 = load [trivial] %10 : [trivial] %10 : $*Int                $*Int                // user: %21
+  // function_ref // user: %21
+  // function_ref add(_:_:)
+  %20add(_:_:)
+  %20 = function_ref @$s3addAAyS2i_SitF : $ = function_ref @$s3addAAyS2i_SitF : $@convention(thin) (Int, @convention(thin) (Int, Int) -> Int // user: %Int) -> Int // user: %21
+  %21 = apply 21
+  %21 = apply %20(%18, %20(%18, %19) : $%19) : $@convention(thin) (Int, Int@convention(thin) (Int, Int) -> Int // user: %22) -> Int // user: %22
+  store %21
+  store %21 to [trivial] %17 to [trivial] %17 : $* : $*Int              // id: %Int              // id: %22
+  %2322
+  %23 = integer_literal $Builtin.Int32,  = integer_literal $Builtin.Int32, 0         // user: %240         // user: %24
+  %24 = struct
+  %24 = struct $Int32 ( $Int32 (%23 : $Builtin.Int32%23 : $Builtin.Int32)      // user: %)      // user: %25
+  return 25
+  return %24 : $Int32%24 : $Int32                             // id: %25
+} // end sil function 'main                             // id: %25
+} // end sil function 'main'
+
+// add(_:_:)
+sil hidden [ossa] '
+
+// add(_:_:)
+sil hidden [ossa] @$s3addAAyS2i_SitF : $@convention(thin) (@$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> Int {
+// Int, Int) -> Int {
+// %0                                             // users: %0                                             // users: %6, %2
+%6, %2
+// %1                                             // users: // %1                                             // users: %6, %3%6, %3
+bb0(
+bb0(%0 : $Int%0 : $Int, %1 : , %1 : $Int):
+$Int):
+  debug_value %  debug_value %0 : $Int0 : $Int, let, name "a", argno 1   // , let, name "a", argno 1   // id: %2
+  debug_value id: %2
+  debug_value %1 : $%1 : $Int, let, name "b", argno 2Int, let, name "b", argno 2   // id: %3
+   // id: %3
+  %4 =   %4 = metatype $@thin Int.Type                   metatype $@thin Int.Type                   // user: %6
+  // function_ref // user: %6
+  // function_ref static Int.+ infix(_:_:)
+  static Int.+ infix(_:_:)
+  %5 = function_ref @$sSi1poiyS2i_SitFZ : %5 = function_ref @$sSi1poiyS2i_SitFZ : $@convention(method) $@convention(method) (Int, Int, @thin Int.Type) -> (Int, Int, @thin Int.Type) -> Int // user: %6Int // user: %6
+  %6 = apply
+  %6 = apply %5(% %5(%0, %1, %0, %1, %4) : $@convention(method) 4) : $@convention(method) (Int, Int, @thin Int.Type) -> (Int, Int, @thin Int.Type) -> Int // user: %7Int // user: %7
+  return %6 : $Int                                // id: %7
+
+  return %6 : $Int                                // id: %7
+} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)
+} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)
+sil [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $@convention(methodsil [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $@convention(method) (Int, Int, @thin Int) (Int, Int, @thin Int.Type) -> Int
+
+// Int.init(_builtinIntegerLiteral:)
+.Type) -> Int
+
+// Int.init(_builtinIntegerLiteral:)
+sil [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(methodsil [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> ) (Builtin.IntLiteral, @thin Int.Type) -> Int
+
+
+
+Int
+
+
+
+  *** SIL module after #20, stage Guaranteed Passes, pass 12: OwnershipModelEliminator (ownership-model-eliminator)
+sil_stage raw
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $  *** SIL module after #20, stage Guaranteed Passes, pass 12: OwnershipModelEliminator (ownership-model-eliminator)
+sil_stage raw
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil @main : $@convention(c) (Int32, Int
+
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+>) -> Int32 {
+bb0(bb0(%0 : $Int32%0 : $Int32, %1 : , %1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer$UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>><Int8>>>):
+  alloc_global @$s3add1aSivp                      ):
+  alloc_global @$s3add1aSivp                      // id: %2
+  // id: %2
+  %3 = global_addr @$s3add1aSivp%3 = global_addr @$s3add1aSivp : $*Int          // user : $*Int          // users: %18, %s: %18, %8
+  %4 = integer_literal $8
+  %4 = integer_literal $Builtin.IntLiteral, 2     // user: Builtin.IntLiteral, 2     // user: %7
+  %5%7
+  %5 = metatype $@thin Int = metatype $@thin Int.Type                   // user: %7.Type                   // user: %7
+  // function_ref Int.init(_builtinIntegerLiteral:)
+  
+  // function_ref Int.init(_builtinIntegerLiteral:)
+  %6 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC%6 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) : $@convention(method) (Builtin.IntLiteral, @thin  (Builtin.IntLiteral, @thin Int.Type) -> Int // user: Int.Type) -> Int // user: %7
+  %7%7
+  %7 = apply %6 = apply %6(%4, (%4, %5) : $%5) : $@convention(method) (Builtin.IntLiteral, @thin @convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int // user: Int.Type) -> Int // user: %8
+  store %8
+  store %7 to %3%7 to %3 : $*Int : $*Int                          // id: %8
+                            // id: %8
+  alloc_global @$s3add1bSivp                      // id: %alloc_global @$s3add1bSivp                      // id: %9
+  %10 = global_addr @9
+  %10 = global_addr @$s3add1bSivp : $*Int         // $s3add1bSivp : $*Int         // users: %19, users: %19, %15
+  %11%15
+  %11 = integer_literal $Builtin.IntLiteral,  = integer_literal $Builtin.IntLiteral, 3    // user: %143    // user: %14
+  %12 = metatype
+  %12 = metatype $@thin Int.Type                   $@thin Int.Type                  // user: %14// user: %14
+  // function_ref Int.init(_builtinIntegerLiteral:)
+  
+  // function_ref Int.init(_builtinIntegerLiteral:)
+  %13 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC%13 = function_ref @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention( : $@convention(method) (Builtin.IntLiteral, method) (Builtin.IntLiteral, @thin Int.Type) -> Int // user: @thin Int.Type) -> Int // user: %14
+  %%14
+  %14 = apply %1314 = apply %13(%11, (%11, %12) : $@convention%12) : $@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int // user: %15
+  store %(method) (Builtin.IntLiteral, @thin Int.Type) -> Int // user: %15
+  store %14 to %10 : 14 to %10 : $*Int                        // $*Int                        // id: %15
+  alloc_global id: %15
+  alloc_global @$s3add1cSivp                      // id: %16@$s3add1cSivp                      // id: %16
+  %17 = global_addr
+  %17 = global_addr @$s3add1cSivp : $*Int @$s3add1cSivp : $*Int         // user: %22
+         // user: %22
+  %18 = load   %18 = load %3 : $*%3 : $*Int                           // user: Int                           // user: %21
+  %19%21
+  %19 = load %10 = load %10 : $*Int                           : $*Int                          // user: %21
+  // function_ref // user: %21
+  // function_ref add(_:_:)
+  %20add(_:_:)
+  %20 = function_ref @$s3addAAyS2i_SitF : $ = function_ref @$s3addAAyS2i_SitF : $@convention(thin) (Int, @convention(thin) (Int, Int) -> Int // user: %Int) -> Int // user: %21
+  %2121
+  %21 = apply %20 = apply %20(%18, (%18, %19) : $@convention%19) : $@convention(thin) (Int(thin) (Int, Int) -> Int // , Int) -> Int // user: %22
+  storeuser: %22
+  store %21 to  %21 to %17 : $*Int%17 : $*Int                        // id: %22                        // id: %22
+  %23
+  %23 = integer_literal $Builtin.Int32,  = integer_literal $Builtin.Int32, 0         // user: %240         // user: %24
+  %24 = struct 
+  %24 = struct $Int32 (%23 : $$Int32 (%23 : $Builtin.Int32)      // user: Builtin.Int32)      // user: %25
+  return %25
+  return %24 : $%24 : $Int32                             // id: %25Int32                             // id: %25
+} // end sil function 'main'
+
+// 
+} // end sil function 'main'
+
+// add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@convention(add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> Intthin) (Int, Int) -> Int {
+// %0                                              {
+// %0                                             // users: %6, // users: %6, %2
+// %1%2
+// %1                                             // users: %6                                             // users: %6, %3
+bb, %3
+bb0(%00(%0 : $Int,  : $Int, %1 : $%1 : $Int):
+  debug_value Int):
+  debug_value %0 : $%0 : $Int, let, name "a", argno Int, let, name "a", argno 1   // id: %1   // id: %2
+  debug_value 2
+  debug_value %1 : $Int%1 : $Int, let, name "b", argno 2   // , let, name "b", argno 2   // id: %3
+  id: %3
+  %4 = metatype %4 = metatype $@thin Int.Type                   // $@thin Int.Type                   // user: %6
+  // function_ref user: %6
+  // function_ref static Int.+ infix(_:_:)
+  %5static Int.+ infix(_:_:)
+  %5 = function_ref @$sSi1poiyS2i_SitFZ : $ = function_ref @$sSi1poiyS2i_SitFZ : $@convention(method) (Int, Int@convention(method) (Int, Int, @thin Int.Type) -> Int // user, @thin Int.Type) -> Int // user: %6
+  : %6
+  %6 = apply %6 = apply %5(%0%5(%0, %1, , %1, %4) : $@convention%4) : $@convention(method) (Int, (method) (Int, Int, @thin Int.Type) -> Int // Int, @thin Int.Type) -> Int // user: %7
+  returnuser: %7
+  return %6 :  %6 : $Int                                // id: $Int                                // id: %7
+} // end sil function '$s3addAAyS2i_SitF'
+
+// %7
+} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)
+sil [transparent] [serialized] @$sSi1poiyS2i_SitFZstatic Int.+ infix(_:_:)
+sil [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $@convention(method) (Int,  : $@convention(method) (Int, Int, @thin Int.Type) -> Int
+
+Int, @thin Int.Type) -> Int
+
+// Int.init(_builtinIntegerLiteral:)
+sil // Int.init(_builtinIntegerLiteral:)
+sil [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method)[transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int (Builtin.IntLiteral, @thin Int.Type) -> Int
+
+
+
+
+
+
+
+  *** SIL module after #21, stage Guaranteed Passes, pass 13: MandatoryInlining (mandatory-inlining)
+sil_stage raw
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let]   *** SIL module after #21, stage Guaranteed Passes, pass 13: MandatoryInlining (mandatory-inlining)
+sil_stage raw
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+@$s3add1cSivp : $Int
+
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0(bb0(%0 : $%0 : $Int32, %1Int32, %1 : $UnsafeMutablePointer<Optional : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>)<UnsafeMutablePointer<Int8>>>):
+  alloc_global @$s3add1aSivp                      :
+  alloc_global @$s3add1aSivp                      // id: %2// id: %2
+  %3 = 
+  %3 = global_addr @$s3add1aSivp : $*global_addr @$s3add1aSivp : $*Int          // users: %Int          // users: %18, %8
+18, %8
+  %4 = integer_literal   %4 = integer_literal $Builtin.IntLiteral, 2     // user$Builtin.IntLiteral, 2     // user: %5
+  : %5
+  %5 = builtin %5 = builtin "s_to_s_c"s_to_s_checked_trhecked_trunc_IntLitunc_IntLiteral_Int64eral_Int64"(%4 : "(%4 : $Builtin.IntLiteral) : $$Builtin.IntLiteral) : $((Builtin.Int64, Builtin.Int1) // userBuiltin.Int64, Builtin.Int1) // user: %6
+  %6: %6
+  %6 = tuple_extract %5 :  = tuple_extract %5 : $(Builtin.Int64, Builtin.Int1)$(Builtin.Int64, Builtin.Int1), 0 // user: , 0 // user: %7
+  %7
+  %7 = struct $%7 = struct $Int (%6Int (%6 : $Builtin.Int64)           : $Builtin.Int64)          // user: %8
+  // user: %8
+  store %7 to store %7 to %3 : $*%3 : $*Int                          // id: %Int                          // id: %8
+  alloc_global @$s3add1bSivp                      8
+  alloc_global @$s3add1bSivp                      // id: %9
+  // id: %9
+  %10 = global_addr @$s3add1bSivp%10 = global_addr @$s3add1bSivp : $*Int         // user : $*Int         // users: %19, %s: %19, %15
+  %1115
+  %11 = integer_literal $Builtin.IntLiteral, 3 = integer_literal $Builtin.IntLiteral, 3    // user: %12
+      // user: %12
+  %12 = builtin "s_%12 = builtin "s_to_s_chto_s_checked_truecked_trunc_IntLnc_IntLiteral_Iiteral_Int64"(%nt64"(%11 : $Builtin.IntLiteral11 : $Builtin.IntLiteral) : $(Builtin.Int64, ) : $(Builtin.Int64, Builtin.Int1) // user: %13Builtin.Int1) // user: %13
+  %13 = 
+  %13 = tuple_extract %12 : tuple_extract %12 : $(Builtin.Int64, Builtin.Int1)$(Builtin.Int64, Builtin.Int1), 0 // user: %, 0 // user: %14
+  %14 = struct 14
+  %14 = struct $Int (%$Int (%13 : $Builtin.Int6413 : $Builtin.Int64)        // user: %15)        // user: %15
+  store %14 to 
+  store %14 to %10 : $*%10 : $*Int                        // id: %15Int                        // id: %15
+  alloc_global @$s3add1cSivp                      // id: 
+  alloc_global @$s3add1cSivp                      // id: %16
+  %%16
+  %17 = global_addr @$s3add1cSivp : 17 = global_addr @$s3add1cSivp : $*Int         // user: $*Int         // user: %22
+  %18%22
+  %18 = load %3 = load %3 : $*Int : $*Int                           // user: %                           // user: %21
+  %19 = 21
+  %19 = load %10 : load %10 : $*Int                          // $*Int                          // user: %21
+  // function_ref user: %21
+  // function_ref add(_:_:)
+  %add(_:_:)
+  %20 = function_ref @$s3addAAyS2i_SitF : 20 = function_ref @$s3addAAyS2i_SitF : $@convention(thin) ($@convention(thin) (Int, Int) -> Int // userInt, Int) -> Int // user: %21
+: %21
+  %21 = apply   %21 = apply %20(%18%20(%18, %19) : $, %19) : $@convention(thin) (Int, @convention(thin) (Int, Int) -> Int // user: %Int) -> Int // user: %22
+  store %22
+  store %21 to %21 to %17 : $*17 : $*Int                        // id: %22Int                        // id: %22
+  %23 = integer_literal
+  %23 = integer_literal $Builtin.Int32, 0          $Builtin.Int32, 0         // user: %24// user: %24
+  %24 = 
+  %24 = struct $Int32 (struct $Int32 (%23 : $%23 : $Builtin.Int32)      // user: %25
+  return %24 : $Builtin.Int32)      // user: %25
+  return %24 : $Int32                             // id: %Int32                             // id: %25
+} // end sil function 'main'
+
+// 25
+} // end sil function 'main'
+
+// add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@convention(thin) (Int, Int@convention(thin) (Int, Int) -> Int {
+// %0) -> Int {
+// %0                                             // users: %4                                             // users: %4, %2
+// , %2
+// %1                                             // users: %1                                             // users: %5, %3%5, %3
+bb0(
+bb0(%0 : $Int%0 : $Int, %1 : , %1 : $Int):
+$Int):
+  debug_value %0  debug_value %0 : $Int, let, name " : $Int, let, name "a", argno 1   // id: %a", argno 1   // id: %2
+  debug_value %12
+  debug_value %1 : $Int, let, name " : $Int, let, name "b", argno 2   // id: %b", argno 2   // id: %3
+  %43
+  %4 = struct_extract %0 = struct_extract %0 : $Int, # : $Int, #Int._value      // user: Int._value      // user: %7
+  %%7
+  %5 = struct_extract 5 = struct_extract %1 : $%1 : $Int, #Int._value      // Int, #Int._value      // user: %7
+  user: %7
+  %6 = integer_literal $%6 = integer_literal $Builtin.Int1, -1          // user: Builtin.Int1, -1          // user: %7
+  %7%7
+  %7 = builtin "sadd = builtin "sadd_with_over_with_overflow_Int64flow_Int64"(%4 : "(%4 : $Builtin.Int64, $Builtin.Int64, %5 : $Builtin.Int64%5 : $Builtin.Int64, %6 : , %6 : $Builtin.Int1) : $$Builtin.Int1) : $(Builtin.Int64, Builtin.Int1) // (Builtin.Int64, Builtin.Int1) // users: %9, users: %9, %8
+  %8%8
+  %8 = tuple_extract %7 = tuple_extract %7 : $(Builtin.Int64,  : $(Builtin.Int64, Builtin.Int1), 0 // userBuiltin.Int1), 0 // user: %11
+  : %11
+  %9 = tuple_extract %%9 = tuple_extract %7 : $(Builtin.Int647 : $(Builtin.Int64, Builtin.Int1), 1 // user, Builtin.Int1), 1 // user: %10
+  cond_fail : %10
+  cond_fail %9 : $%9 : $Builtin.Int1, "aritBuiltin.Int1, "arithmetic ovehmetic overflow" // id: rflow" // id: %10
+  %%10
+  %11 = struct $11 = struct $Int (%Int (%8 : $8 : $Builtin.Int64)         // user: Builtin.Int64)         // user: %12
+  return %12
+  return %11 : $%11 : $Int                               // id: %12Int                               // id: %12
+} // end sil function '$s3addAAyS2i_SitF'
+
+// 
+} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] [canonical] @$sSi1poiyS2i_SitFZ : $@convention([canonical] @$sSi1poiyS2i_SitFZ : $@convention(method) (Int, Int, @thin method) (Int, Int, @thin Int.Type) -> Int {
+// Int.Type) -> Int {
+// %0                                             // user: %3%0                                             // user: %3
+// %1                                             
+// %1                                             // user: %4
+// user: %4
+bb0(bb0(%0 : $Int, %0 : $Int, %1 : $%1 : $Int, %Int, %2 : $@thin Int2 : $@thin Int.Type):
+  %.Type):
+  %3 = struct_extract %3 = struct_extract %0 : $Int0 : $Int, #Int._value      // user: , #Int._value      // user: %6
+  %4%6
+  %4 = struct_extract %1 = struct_extract %1 : $Int, # : $Int, #Int._value      // user: %Int._value      // user: %6
+  %5 = 6
+  %5 = integer_literal $Builtin.Int1, -1integer_literal $Builtin.Int1, -1          // user: %6
+          // user: %6
+  %6 = builtin   %6 = builtin "sadd_w"sadd_with_overith_overflow_Int64flow_Int64"(%3"(%3 : $Builtin.Int64 : $Builtin.Int64, %4 : , %4 : $Builtin.Int64, $Builtin.Int64, %5 : $Builtin.Int1%5 : $Builtin.Int1) : $(Builtin.Int64, ) : $(Builtin.Int64, Builtin.Int1) // users: Builtin.Int1) // users: %8, %7%8, %7
+  %7 = tuple_extract 
+  %7 = tuple_extract %6 : $%6 : $(Builtin.Int64, Builtin.Int1), 0(Builtin.Int64, Builtin.Int1), 0 // user: %10
+   // user: %10
+  %8 = tuple_extract %%8 = tuple_extract %6 : $(Builtin.Int646 : $(Builtin.Int64, Builtin.Int1), 1 // user, Builtin.Int1), 1 // user: %9
+  cond_fail : %9
+  cond_fail %8 : $Builtin.Int1, "arithmeti%8 : $Builtin.Int1, "arithmetic overflc overflow" // id: %9ow" // id: %9
+  %10 = 
+  %10 = struct $Int (struct $Int (%7 : $%7 : $Builtin.Int64)         // user: %Builtin.Int64)         // user: %11
+  return 11
+  return %10 : %10 : $Int                               // id: $Int                               // id: %11
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// %11
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] [canonical] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) [canonical] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral, @thin Int.Type(Builtin.IntLiteral, @thin Int.Type) -> Int {
+// %0) -> Int {
+// %0                                             // user: %2
+                                             // user: %2
+bb0(%bb0(%0 : $Builtin.IntLiteral0 : $Builtin.IntLiteral, %1 : , %1 : $@thin Int.Type):$@thin Int.Type):
+  %2 = builtin
+  %2 = builtin "s_to "s_to_s_chec_s_checked_trunked_trunc_IntLiterc_IntLiteral_Int64"al_Int64"(%0 : (%0 : $Builtin.IntLiteral) : $$Builtin.IntLiteral) : $(Builtin.Int64, Builtin.Int1) // (Builtin.Int64, Builtin.Int1) // user: %3
+  user: %3
+  %3 = tuple_extract %3 = tuple_extract %2 : $(Builtin.Int64, Builtin.Int1), 0%2 : $(Builtin.Int64, Builtin.Int1), 0 // user: %4
+  %4 = struct $Int ( // user: %4
+  %4 = struct $Int (%3 : $%3 : $Builtin.Int64)          // user: Builtin.Int64)          // user: %5
+  return %5
+  return %4 : $%4 : $Int                                // id: %Int                                // id: %5
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+
+5
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+
+  *** SIL function after  #28, stage Guaranteed Passes, pass 20: DiagnoseUnreachable (diagnose-unreachable)
+// add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> Int {
+// %0                                             // users: %4, %2
+// %1  *** SIL function after  #28, stage Guaranteed Passes, pass 20: DiagnoseUnreachable (diagnose-unreachable)
+// add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> Int {
+// %0                                             // users: %4, %2
+// %1                                             // users: %5, %3
+bb0(                                             // users: %5, %3
+bb0(%0 : %0 : $Int, $Int, %1 : $Int%1 : $Int):
+  debug_value ):
+  debug_value %0 : $Int, let, name "%0 : $Int, let, name "a", argno 1   // id: a", argno 1   // id: %2
+  debug_value %2
+  debug_value %1 : $%1 : $Int, let, name "b", argno 2Int, let, name "b", argno 2   // id: %3
+     // id: %3
+  %4 = struct_extract %4 = struct_extract %0 : $%0 : $Int, #Int._valueInt, #Int._value      // user: %7
+      // user: %7
+  %5 = struct_extract   %5 = struct_extract %1 : $%1 : $Int, #Int._value      // userInt, #Int._value      // user: %7
+  %6: %7
+  %6 = integer_literal $Builtin.Int1, -1 = integer_literal $Builtin.Int1, -1          // user: %7
+            // user: %7
+  %7 = builtin "sa%7 = builtin "sadd_with_ovdd_with_overflow_Interflow_Int64"(%464"(%4 : $Builtin.Int64,  : $Builtin.Int64, %5 : $%5 : $Builtin.Int64, %6Builtin.Int64, %6 : $Builtin.Int1) :  : $Builtin.Int1) : $(Builtin.Int64, Builtin.Int1)$(Builtin.Int64, Builtin.Int1) // users: %9 // users: %9, %8
+  , %8
+  %8 = tuple_extract %7%8 = tuple_extract %7 : $(Builtin.Int64, Builtin.Int1 : $(Builtin.Int64, Builtin.Int1), 0 // user: ), 0 // user: %11
+  %9%11
+  %9 = tuple_extract %7 = tuple_extract %7 : $(Builtin.Int64, Builtin.Int1 : $(Builtin.Int64, Builtin.Int1), 1 // user: ), 1 // user: %10
+  cond_fail %10
+  cond_fail %9 : $Builtin.Int1%9 : $Builtin.Int1, "arithm, "arithmetic overfetic overflow" // id: %low" // id: %10
+  %1110
+  %11 = struct $ = struct $Int (%8Int (%8 : $Builtin.Int64)          : $Builtin.Int64)         // user: %12
+// user: %12
+  return %  return %11 : $Int11 : $Int                               // id: %12
+                               // id: %12
+} // end sil function '$s3addAAyS2i_SitF'
+
+} // end sil function '$s3addAAyS2i_SitF'
+
+  *** SIL function after  #35, stage Guaranteed Passes, pass 17: DiagnosticConstantPropagation (diagnostic-constant-propagation)
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0(%0 : $Int32, %1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>  *** SIL function after  #35, stage Guaranteed Passes, pass 17: DiagnosticConstantPropagation (diagnostic-constant-propagation)
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0(%0 : $Int32, %1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):
+  alloc_global @$s3add1aSivp                      // id: %2
+  >):
+  alloc_global @$s3add1aSivp                      // id: %2
+  %3 = global_addr @$s3add1aSivp%3 = global_addr @$s3add1aSivp : $*Int          // users: %14 : $*Int          // users: %14, %6
+  , %6
+  %4 = integer_literal $%4 = integer_literal $Builtin.Int64, 2          // user: Builtin.Int64, 2          // user: %5
+  %5%5
+  %5 = struct $Int ( = struct $Int (%4 : $%4 : $Builtin.Int64)          // user: Builtin.Int64)          // user: %6
+  store %5%6
+  store %5 to %3 :  to %3 : $*Int                          // id: $*Int                          // id: %6
+  alloc_global @%6
+  alloc_global @$s3add1bSivp                      // id: %$s3add1bSivp                      // id: %7
+  %8 = 7
+  %8 = global_addr @$s3add1bSivp : $*global_addr @$s3add1bSivp : $*Int          // users: %15Int          // users: %15, %11
+  , %11
+  %9 = integer_literal $%9 = integer_literal $Builtin.Int64, 3          // user: Builtin.Int64, 3          // user: %10
+  %10%10
+  %10 = struct $Int ( = struct $Int (%9 : $%9 : $Builtin.Int64)         // user: Builtin.Int64)         // user: %11
+  store %11
+  store %10 to %10 to %8 : $*%8 : $*Int                         // id: %11Int                         // id: %11
+  alloc_global @$s3add1cSivp                      // 
+  alloc_global @$s3add1cSivp                      // id: %12
+  id: %12
+  %13 = global_addr @$s3add1cSivp : %13 = global_addr @$s3add1cSivp : $*Int         // user: $*Int         // user: %18
+  %%18
+  %14 = load %14 = load %3 : $*3 : $*Int                           // user: Int                           // user: %17
+  %15%17
+  %15 = load %8 = load %8 : $*Int : $*Int                           // user: %                           // user: %17
+  // function_ref add(_:_:)17
+  // function_ref add(_:_:)
+  %16 = function_ref
+  %16 = function_ref @$s3addAAyS2i_SitF : $@convention @$s3addAAyS2i_SitF : $@convention(thin) (Int(thin) (Int, Int) -> Int // user: , Int) -> Int // user: %17
+  %17%17
+  %17 = apply %16 = apply %16(%14, %(%14, %15) : $15) : $@convention(thin) (Int@convention(thin) (Int, Int) -> Int // user: , Int) -> Int // user: %18
+  store %18
+  store %17 to %17 to %13 : $*%13 : $*Int                        // id: %18Int                        // id: %18
+  %19 = integer_literal
+  %19 = integer_literal $Builtin.Int32, 0          $Builtin.Int32, 0         // user: %20// user: %20
+  %20 = 
+  %20 = struct $Int32 (struct $Int32 (%19 : $%19 : $Builtin.Int32)      // user: Builtin.Int32)      // user: %21
+  return %21
+  return %20 : $%20 : $Int32                             // id: %Int32                             // id: %21
+} // end sil function 'main'
+
+21
+} // end sil function 'main'
+
+  *** SIL function after  #38, stage Guaranteed Passes  *** SIL function after  #38, stage Guaranteed Passes, pass 20: DiagnoseUnreachable (diagnose-unreachable)
+// , pass 20: DiagnoseUnreachable (diagnose-unreachable)
+// main
+sil @main : $@convention(cmain
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0(bb0(%0 : $%0 : $Int32, %Int32, %1 : $UnsafeMutablePointer1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8<Optional<UnsafeMutablePointer<Int8>>>):
+  alloc_global @$s3add1aSivp                      // id: %2
+  %3 = global_addr @>>>):
+  alloc_global @$s3add1aSivp                      // id: %2
+  %3 = global_addr @$s3add1aSivp : $*Int$s3add1aSivp : $*Int          // users: %14          // users: %14, %6
+  , %6
+  %4 = integer_literal $%4 = integer_literal $Builtin.Int64, 2          // user: Builtin.Int64, 2          // user: %5
+  %5%5
+  %5 = struct $Int = struct $Int (%4 (%4 : $Builtin.Int64)           : $Builtin.Int64)          // user: %6
+  // user: %6
+  store %5 to store %5 to %3 : $*%3 : $*Int                          // id: %Int                          // id: %6
+  alloc_global @6
+  alloc_global @$s3add1bSivp                      // id: %7$s3add1bSivp                      // id: %7
+  %8 = global_addr
+  %8 = global_addr @$s3add1bSivp : $* @$s3add1bSivp : $*Int          // users: Int          // users: %15, %11%15, %11
+  %9 = integer_literal
+  %9 = integer_literal $Builtin.Int64, 3           $Builtin.Int64, 3          // user: %10// user: %10
+  %10 = 
+  %10 = struct $Intstruct $Int (%9 :  (%9 : $Builtin.Int64)         // user$Builtin.Int64)         // user: %11
+: %11
+  store %10 to   store %10 to %8 : $*%8 : $*Int                         // id: %Int                         // id: %11
+  alloc_global @$s3add1cSivp                      11
+  alloc_global @$s3add1cSivp                      // id: %12// id: %12
+  %13 = global_addr
+  %13 = global_addr @$s3add1cSivp : $*Int @$s3add1cSivp : $*Int         // user: %18
+         // user: %18
+  %14 = load   %14 = load %3 : $*%3 : $*Int                           // user: Int                           // user: %17
+  %15%17
+  %15 = load %8 = load %8 : $*Int                           // user: % : $*Int                           // user: %17
+  // function_ref add(_:_:)
+17
+  // function_ref add(_:_:)
+  %16 = function_ref @  %16 = function_ref @$s3addAAyS2i_SitF : $@convention(thin)$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> Int //  (Int, Int) -> Int // user: %17
+  user: %17
+  %17 = apply %%17 = apply %16(%14, 16(%14, %15) : $%15) : $@convention(thin) (Int, Int@convention(thin) (Int, Int) -> Int // user: %18) -> Int // user: %18
+  store %17
+  store %17 to %13 :  to %13 : $*Int                        // $*Int                        // id: %18
+  id: %18
+  %19 = integer_literal%19 = integer_literal $Builtin.Int32 $Builtin.Int32, 0         // user: , 0         // user: %20
+  %20%20
+  %20 = struct $Int32 = struct $Int32 (%19 :  (%19 : $Builtin.Int32)      // user: $Builtin.Int32)      // user: %21
+  return %21
+  return %20 : $%20 : $Int32                             // id: %21Int32                             // id: %21
+} // end sil function 'main'
+
+
+} // end sil function 'main'
+
+  *** SIL function after  #48, stage Guaranteed Passes, pass 20  *** SIL function after  #48, stage Guaranteed Passes, pass 20: DiagnoseUnreachable (diagnose-unreachable)
+// : DiagnoseUnreachable (diagnose-unreachable)
+// static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] [canonical] @$sSi1poiyS2i_SitFZ : $@convention(method)[canonical] @$sSi1poiyS2i_SitFZ : $@convention(method) (Int, Int, @thin Int.Type (Int, Int, @thin Int.Type) -> Int {
+// %0) -> Int {
+// %0                                             // user: %3                                             // user: %3
+// %1
+// %1                                             // user: %4
+                                             // user: %4
+bb0(%bb0(%0 : $Int0 : $Int, %1 : , %1 : $Int, %$Int, %2 : $@thin Int2 : $@thin Int.Type):
+  %3.Type):
+  %3 = struct_extract %0 = struct_extract %0 : $Int, # : $Int, #Int._value      // user: %Int._value      // user: %6
+  %4 = 6
+  %4 = struct_extract %1 : struct_extract %1 : $Int, #Int.$Int, #Int._value      // user: %6_value      // user: %6
+  %5 = integer_literal
+  %5 = integer_literal $Builtin.Int1, -1           $Builtin.Int1, -1          // user: %6
+// user: %6
+  %6 = builtin "  %6 = builtin "sadd_withsadd_with_overfl_overflow_Int6ow_Int64"(%4"(%3 : $Builtin.Int643 : $Builtin.Int64, %4 : $Builtin.Int64, %5 : $Builtin.Int1, %4 : $Builtin.Int64, %5 : $Builtin.Int1) : $(Builtin.Int64, Builtin.Int1) : $(Builtin.Int64, Builtin.Int1) // users: %8) // users: %8, %7
+  , %7
+  %7 = tuple_extract %7 = tuple_extract %6 : $%6 : $(Builtin.Int64, Builtin.Int1)(Builtin.Int64, Builtin.Int1), 0 // user: %, 0 // user: %10
+  %10
+  %8 = tuple_extract %8 = tuple_extract %6 : $(Builtin.Int646 : $(Builtin.Int64, Builtin.Int1), 1 // user, Builtin.Int1), 1 // user: %9
+  cond_fail : %9
+  cond_fail %8 : $%8 : $Builtin.Int1, "aritBuiltin.Int1, "arithmetic ovehmetic overflow" // id: rflow" // id: %9
+  %10%9
+  %10 = struct $Int = struct $Int (%7 :  (%7 : $Builtin.Int64)         // user$Builtin.Int64)         // user: %11
+  return: %11
+  return %10 %10 : $Int                               //  : $Int                               // id: %11
+} // end sil function '$sSi1poiyS2i_SitFZid: %11
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+'
+
+  *** SIL function after   *** SIL function after  #58, stage Guaranteed Passes, pass 20: DiagnoseUnreachable ( #58, stage Guaranteed Passes, pass 20: DiagnoseUnreachable (diagnose-unreachable)
+// diagnose-unreachable)
+// Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] [canonical] Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] [canonical] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (@$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int {
+// Builtin.IntLiteral, @thin Int.Type) -> Int {
+// %0                                             // user: %0                                             // user: %2
+bb0%2
+bb0(%0 : (%0 : $Builtin.IntLiteral, %$Builtin.IntLiteral, %1 : $@thin Int1 : $@thin Int.Type):
+  %2.Type):
+  %2 = builtin "s_to = builtin "s_to_s_checked_s_checked_trunc_Int_trunc_IntLiteral_InLiteral_Int64"(%0t64"(%0 : $Builtin.IntLiteral) :  : $Builtin.IntLiteral) : $(Builtin.Int64, Builtin.Int1)$(Builtin.Int64, Builtin.Int1) // user: %3
+   // user: %3
+  %3 = tuple_extract %%3 = tuple_extract %2 : $2 : $(Builtin.Int64, Builtin.Int1)(Builtin.Int64, Builtin.Int1), 0 // user: %4, 0 // user: %4
+  %4 = 
+  %4 = struct $Int (struct $Int (%3 : $%3 : $Builtin.Int64)          // user: %Builtin.Int64)          // user: %5
+  return 5
+  return %4 : $Int%4 : $Int                                // id: %5                                // id: %5
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+*** SIL module before Mandatory Combines ***
+sil_stage canonical
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil *** SIL module before Mandatory Combines ***
+sil_stage canonical
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8@main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+>>>) -> Int32 {
+bb0(bb0(%0 : $%0 : $Int32, %1Int32, %1 : $UnsafeMutablePointer<Optional< : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):UnsafeMutablePointer<Int8>>>):
+  alloc_global @$s3add1aSivp                      // id: 
+  alloc_global @$s3add1aSivp                      // id: %2
+  %%2
+  %3 = global_addr @$s3add1aSivp : 3 = global_addr @$s3add1aSivp : $*Int          // users$*Int          // users: %14, %: %14, %6
+  %6
+  %4 = integer_literal $4 = integer_literal $Builtin.Int64, 2          // user: %Builtin.Int64, 2          // user: %5
+  %5 = struct $5
+  %5 = struct $Int (%4Int (%4 : $Builtin.Int64) : $Builtin.Int64)          // user: %6
+          // user: %6
+  store %5 to   store %5 to %3 : $*%3 : $*Int                          // id: %Int                          // id: %6
+  alloc_global @$s3add1bSivp                      // id: %7
+  %8 = global_addr @$s3add1bSivp : $*6
+  alloc_global @$s3add1bSivp                      // id: %7
+  %8 = global_addr @$s3add1bSivp : $*Int          // users: Int          // users: %15, %11
+  %15, %11
+  %9 = integer_literal $%9 = integer_literal $Builtin.Int64, 3          // user: %Builtin.Int64, 3          // user: %10
+  %10 = 10
+  %10 = struct $Int (struct $Int (%9 : $%9 : $Builtin.Int64)         // user: Builtin.Int64)         // user: %11
+  store %%11
+  store %10 to %810 to %8 : $*Int                          : $*Int                         // id: %11
+  alloc_global// id: %11
+  alloc_global @$s3add1cSivp                      // id: %12 @$s3add1cSivp                      // id: %12
+  %13 = 
+  %13 = global_addr @$s3add1cSivp : $*global_addr @$s3add1cSivp : $*Int         // user: %18Int         // user: %18
+  %14 = load
+  %14 = load %3 :  %3 : $*Int                           // user$*Int                           // user: %17
+: %17
+  %15 = load   %15 = load %8 : $*%8 : $*Int                           // user: Int                           // user: %17
+  // function_ref %17
+  // function_ref add(_:_:)
+  %16 = add(_:_:)
+  %16 = function_ref @$s3addAAyS2i_SitF : $function_ref @$s3addAAyS2i_SitF : $@convention(thin) (Int, Int@convention(thin) (Int, Int) -> Int // user: %17) -> Int // user: %17
+  %17 = apply
+  %17 = apply %16 %16(%14, (%14, %15) : $%15) : $@convention(thin) (Int, Int@convention(thin) (Int, Int) -> Int // user: %18) -> Int // user: %18
+  store %17
+  store %17 to %13 :  to %13 : $*Int                        // id: $*Int                        // id: %18
+  %%18
+  %19 = integer_literal $19 = integer_literal $Builtin.Int32, 0         // user: %Builtin.Int32, 0         // user: %20
+  %2020
+  %20 = struct $ = struct $Int32 (%19 : Int32 (%19 : $Builtin.Int32)      // $Builtin.Int32)      // user: %21user: %21
+  return %20
+  return %20 : $Int32                              : $Int32                             // id: %21
+} // end sil function '// id: %21
+} // end sil function 'main'
+
+// main'
+
+// add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@convention(add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@convention(thin) (Int, thin) (Int, Int) -> Int {
+// %Int) -> Int {
+// %0                                             // users: %0                                             // users: %4, %2
+4, %2
+// %1                                             // %1                                             // users: %5, // users: %5, %3
+bb0%3
+bb0(%0 : (%0 : $Int, %$Int, %1 : $Int1 : $Int):
+  debug_value %0):
+  debug_value %0 : $Int, let, name " : $Int, let, name "a", argno 1   // id: %a", argno 1   // id: %2
+  debug_value %12
+  debug_value %1 : $Int, let, name " : $Int, let, name "b", argno 2   // id: %b", argno 2   // id: %3
+  %4 = 3
+  %4 = struct_extract %0 : struct_extract %0 : $Int, #Int.$Int, #Int._value      // user: %7_value      // user: %7
+  %5 = struct_extract
+  %5 = struct_extract %1 :  %1 : $Int, #Int._value$Int, #Int._value      // user: %      // user: %7
+  %67
+  %6 = integer_literal $Builtin.Int1,  = integer_literal $Builtin.Int1, -1          // user: %7-1          // user: %7
+  %7 = builtin
+  %7 = builtin "sadd_wi "sadd_with_overth_overflow_Intflow_Int64"(%464"(%4 : $Builtin.Int64,  : $Builtin.Int64, %5 : $%5 : $Builtin.Int64, %6Builtin.Int64, %6 : $Builtin.Int1) :  : $Builtin.Int1) : $(Builtin.Int64, Builtin.Int1$(Builtin.Int64, Builtin.Int1) // users: %9) // users: %9, %8
+  , %8
+  %8 = tuple_extract %8 = tuple_extract %7 : $(%7 : $(Builtin.Int64, Builtin.Int1), 0 Builtin.Int64, Builtin.Int1), 0 // user: %11// user: %11
+  %9 = 
+  %9 = tuple_extract %7 : tuple_extract %7 : $(Builtin.Int64, Builtin.Int1)$(Builtin.Int64, Builtin.Int1), 1 // user: %, 1 // user: %10
+  cond_fail 10
+  cond_fail %9 : $%9 : $Builtin.Int1, "aritBuiltin.Int1, "arithmetic ovehmetic overflow" // id: rflow" // id: %10
+  %%10
+  %11 = struct $11 = struct $Int (%8 : Int (%8 : $Builtin.Int64)         // user$Builtin.Int64)         // user: %12
+  return : %12
+  return %11 : $Int                               // id: %12
+} // end sil function '$s3addAAyS2i_SitF'%11 : $Int                               // id: %12
+} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)
+sil 
+
+// static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $public_external [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $@convention(method) (Int, @convention(method) (Int, Int, @thin Int.Type) -> Int, @thin Int.Type) -> Int {
+// %0Int {
+// %0                                             // user: %3
+                                             // user: %3
+// %1                                             // user: // %1                                             // user: %4
+bb0%4
+bb0(%0 : (%0 : $Int, $Int, %1 : $Int%1 : $Int, %2 : , %2 : $@thin Int.Type)$@thin Int.Type):
+  %3 = struct_extract:
+  %3 = struct_extract %0 :  %0 : $Int, #Int._value$Int, #Int._value      // user: %      // user: %6
+  %4 = struct_extract 6
+  %4 = struct_extract %1 : $%1 : $Int, #Int._value      // userInt, #Int._value      // user: %6
+  : %6
+  %5 = integer_literal %5 = integer_literal $Builtin.Int1, -1          // $Builtin.Int1, -1          // user: %6user: %6
+  %6 = builtin 
+  %6 = builtin "sadd_wit"sadd_with_overfh_overflow_Intlow_Int64"(%64"(%3 : $Builtin.Int643 : $Builtin.Int64, %4 : , %4 : $Builtin.Int64, $Builtin.Int64, %5 : $Builtin.Int1%5 : $Builtin.Int1) : $(Builtin.Int64, ) : $(Builtin.Int64, Builtin.Int1) // users: %Builtin.Int1) // users: %8, %7
+8, %7
+  %7 = tuple_extract   %7 = tuple_extract %6 : $%6 : $(Builtin.Int64, Builtin.Int1), 0(Builtin.Int64, Builtin.Int1), 0 // user: %10
+ // user: %10
+  %8 = tuple_extract   %8 = tuple_extract %6 : $%6 : $(Builtin.Int64, Builtin.Int1), (Builtin.Int64, Builtin.Int1), 1 // user: %1 // user: %9
+  cond_fail 9
+  cond_fail %8 : $Builtin.Int1%8 : $Builtin.Int1, "arithm, "arithmetic overetic overflow" // flow" // id: %9
+id: %9
+  %10 = struct   %10 = struct $Int (%7$Int (%7 : $Builtin.Int64) : $Builtin.Int64)         // user: %11
+  return         // user: %11
+  return %10 : $ %10 : $Int                               // id: %Int                               // id: %11
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// 11
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] @Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int, @thin Int.Type) -> Int {
+// %0                                              {
+// %0                                             // user: %2// user: %2
+bb0(
+bb0(%0 : $%0 : $Builtin.IntLiteral, %Builtin.IntLiteral, %1 : $@thin Int1 : $@thin Int.Type):
+  %.Type):
+  %2 = builtin "s_t2 = builtin "s_to_s_checkeo_s_checked_trunc_Id_trunc_IntLiteralntLiteral_Int64"_Int64"(%0(%0 : $Builtin.IntLiteral) :  : $Builtin.IntLiteral) : $(Builtin.Int64, Builtin.Int1) $(Builtin.Int64, Builtin.Int1) // user: %3
+// user: %3
+  %3 =   %3 = tuple_extract %2 : tuple_extract %2 : $(Builtin.Int64, Builtin.Int1)$(Builtin.Int64, Builtin.Int1), 0 // user: %4, 0 // user: %4
+  %4 = 
+  %4 = struct $Int (struct $Int (%3 : $%3 : $Builtin.Int64)          // user: Builtin.Int64)          // user: %5
+  return %5
+  return %4 : $%4 : $Int                                // id: %Int                                // id: %5
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'5
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+
+
+
+
+
+*** SIL module before Serialization ***
+sil_stage canonical
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0*** SIL module before Serialization ***
+sil_stage canonical
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0(%0 : $Int32, %1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):
+  alloc_global @(%0 : $Int32, %1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):
+  alloc_global @$s3add1aSivp                      // id: %2
+$s3add1aSivp                      // id: %2
+  %3  %3 = global_addr @$s3add1aSivp : $* = global_addr @$s3add1aSivp : $*Int          // users: Int          // users: %14, %6
+%14, %6
+  %4 = integer_literal   %4 = integer_literal $Builtin.Int64, 2          // user$Builtin.Int64, 2          // user: %5
+  %: %5
+  %5 = struct $Int5 = struct $Int (%4 :  (%4 : $Builtin.Int64)          // user: $Builtin.Int64)          // user: %6
+  store %6
+  store %5 to %3%5 to %3 : $*Int : $*Int                          // id: %6
+                          // id: %6
+  alloc_global @$s3add1bSivp                      //   alloc_global @$s3add1bSivp                      // id: %7
+id: %7
+  %8 = global_addr @  %8 = global_addr @$s3add1bSivp : $*Int          // $s3add1bSivp : $*Int          // users: %15, users: %15, %11
+  %9%11
+  %9 = integer_literal $Builtin.Int64 = integer_literal $Builtin.Int64, 3          // user: %10, 3          // user: %10
+  %10 = 
+  %10 = struct $Int (struct $Int (%9 : $%9 : $Builtin.Int64)         // user: %Builtin.Int64)         // user: %11
+  store %1011
+  store %10 to %8 :  to %8 : $*Int                         // $*Int                         // id: %11
+  alloc_global id: %11
+  alloc_global @$s3add1cSivp                      // id: %12@$s3add1cSivp                      // id: %12
+  %13 = global_addr
+  %13 = global_addr @$s3add1cSivp : $*Int         // user:  @$s3add1cSivp : $*Int         // user: %18
+  %14%18
+  %14 = load %3 = load %3 : $*Int : $*Int                           // user: %17
+                           // user: %17
+  %15 = load   %15 = load %8 : $*%8 : $*Int                           // user: Int                           // user: %17
+  // function_ref add(_:_:)%17
+  // function_ref add(_:_:)
+  %16 = function_ref 
+  %16 = function_ref @$s3addAAyS2i_SitF : $@convention(@$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> Intthin) (Int, Int) -> Int // user: %17
+   // user: %17
+  %17 = apply %16(%14, %15%17 = apply %16(%14, %15) : $@convention() : $@convention(thin) (Int, Int) -> thin) (Int, Int) -> Int // user: %18Int // user: %18
+  store %17
+  store %17 to %13 :  to %13 : $*Int                        // id: $*Int                        // id: %18
+  %19%18
+  %19 = integer_literal $Builtin.Int32 = integer_literal $Builtin.Int32, 0         // user: %20, 0         // user: %20
+  %20 = 
+  %20 = struct $Int32 (struct $Int32 (%19 : $%19 : $Builtin.Int32)      // user: %Builtin.Int32)      // user: %21
+  return 21
+  return %20 : $%20 : $Int32                             // id: %Int32                             // id: %21
+} // end sil function 'main'
+
+// 21
+} // end sil function 'main'
+
+// add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@conventionadd(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> (thin) (Int, Int) -> Int {
+// %0Int {
+// %0                                             // users: %4                                             // users: %4, %2
+, %2
+// %1                                             // users: // %1                                             // users: %5, %3%5, %3
+bb0(
+bb0(%0 : $%0 : $Int, %1Int, %1 : $Int): : $Int):
+  debug_value %0
+  debug_value %0 : $Int, let : $Int, let, name "a", argno 1   // id: , name "a", argno 1   // id: %2
+  debug_value %2
+  debug_value %1 : $Int%1 : $Int, let, name "b", argno 2   // , let, name "b", argno 2   // id: %3
+  id: %3
+  %4 = struct_extract %4 = struct_extract %0 : $%0 : $Int, #Int._value      Int, #Int._value      // user: %7
+// user: %7
+  %5 =   %5 = struct_extract %1 : struct_extract %1 : $Int, #Int._value      // user: %7
+  %6$Int, #Int._value      // user: %7
+  %6 = integer_literal $Builtin.Int1, -1 = integer_literal $Builtin.Int1, -1          // user: %7
+          // user: %7
+  %7 = builtin "  %7 = builtin "sadd_with_sadd_with_overflow_Ioverflow_Int64"(%4nt64"(%4 : $Builtin.Int64 : $Builtin.Int64, %5 : , %5 : $Builtin.Int64, $Builtin.Int64, %6 : $Builtin.Int1%6 : $Builtin.Int1) : $(Builtin.Int64, ) : $(Builtin.Int64, Builtin.Int1) // users: %Builtin.Int1) // users: %9, %8
+9, %8
+  %8 = tuple_extract   %8 = tuple_extract %7 : $%7 : $(Builtin.Int64, Builtin.Int1), 0(Builtin.Int64, Builtin.Int1), 0 // user: %11
+ // user: %11
+  %9 = tuple_extract   %9 = tuple_extract %7 : $%7 : $(Builtin.Int64, Builtin.Int1), (Builtin.Int64, Builtin.Int1), 1 // user: %101 // user: %10
+  cond_fail %9
+  cond_fail %9 : $Builtin.Int1, "a : $Builtin.Int1, "arithmetic rithmetic overflow"overflow" // id: %10
+   // id: %10
+  %11 = struct %11 = struct $Int (%8$Int (%8 : $Builtin.Int64) : $Builtin.Int64)         // user: %12
+  return         // user: %12
+  return %11 : $ %11 : $Int                               // id: %Int                               // id: %12
+} // end sil function '$s3addAAyS2i_SitF'
+
+// 12
+} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] @static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $@convention(method) (Int$sSi1poiyS2i_SitFZ : $@convention(method) (Int, Int, @thin Int.Type) -> Int, Int, @thin Int.Type) -> Int {
+// % {
+// %0                                             // user: %30                                             // user: %3
+// %1                                             // user
+// %1                                             // user: %4
+bb: %4
+bb0(%00(%0 : $Int,  : $Int, %1 : $%1 : $Int, %2Int, %2 : $@thin Int.Type : $@thin Int.Type):
+  %3 = ):
+  %3 = struct_extract %0 : struct_extract %0 : $Int, #Int.$Int, #Int._value      // user: %6_value      // user: %6
+  %4 = struct_extract
+  %4 = struct_extract %1 :  %1 : $Int, #Int._value$Int, #Int._value      // user: %      // user: %6
+  %56
+  %5 = integer_literal $Builtin.Int1,  = integer_literal $Builtin.Int1, -1          // user: %6-1          // user: %6
+  %6 = builtin
+  %6 = builtin "sadd_wi "sadd_with_overth_overflow_Intflow_Int64"(%364"(%3 : $Builtin.Int64,  : $Builtin.Int64, %4 : $%4 : $Builtin.Int64, %5Builtin.Int64, %5 : $Builtin.Int1) :  : $Builtin.Int1) : $(Builtin.Int64, Builtin.Int1)$(Builtin.Int64, Builtin.Int1) // users: %8 // users: %8, %7
+  , %7
+  %7 = tuple_extract %7 = tuple_extract %6 : $%6 : $(Builtin.Int64, Builtin.Int1), (Builtin.Int64, Builtin.Int1), 0 // user: %100 // user: %10
+  %8 = tuple_extract
+  %8 = tuple_extract %6 %6 : $(Builtin.Int64, Builtin.Int1 : $(Builtin.Int64, Builtin.Int1), 1 // user: ), 1 // user: %9
+  cond_fail %9
+  cond_fail %8 : $%8 : $Builtin.Int1, "ariBuiltin.Int1, "arithmetic ovthmetic overflow" // erflow" // id: %9
+  id: %9
+  %10 = struct $%10 = struct $Int (%7Int (%7 : $Builtin.Int64)          : $Builtin.Int64)         // user: %11
+// user: %11
+  return %  return %10 : $Int10 : $Int                               // id: %11
+                               // id: %11
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// Int.init(_builtinIntegerLiteral:)} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention
+sil public_external [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral, @thin Int(method) (Builtin.IntLiteral, @thin Int.Type) -> Int {
+// %0.Type) -> Int {
+// %0                                             // user: %2
+bb                                             // user: %2
+bb0(%0 : 0(%0 : $Builtin.IntLiteral, $Builtin.IntLiteral, %1 : $@thin %1 : $@thin Int.Type):
+  %2Int.Type):
+  %2 = builtin "s_to_ = builtin "s_to_s_checkeds_checked_trunc__trunc_IntLiteraIntLiteral_Int64"(l_Int64"(%0 : %0 : $Builtin.IntLiteral) : $(Builtin.Int64, Builtin.Int1) // user: %3
+$Builtin.IntLiteral) : $(Builtin.Int64, Builtin.Int1) // user: %3
+  %3 = tuple_extract   %3 = tuple_extract %2 : $%2 : $(Builtin.Int64, Builtin.Int1), 0(Builtin.Int64, Builtin.Int1), 0 // user: %4
+ // user: %4
+  %4 = struct   %4 = struct $Int (%$Int (%3 : $3 : $Builtin.Int64)          // user: Builtin.Int64)          // user: %5
+  return %5
+  return %4 : $%4 : $Int                                // id: %5Int                                // id: %5
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+
+
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+
+*** SIL module before Rest of Onone*** SIL module before Rest of Onone ***
+sil_stage canonical
+
+import Builtin
+import Swift
+import SwiftShims
+
+ ***
+sil_stage canonical
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @// a
+sil_global hidden [let] @$s3add1aSivp : $$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+@$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : // c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+$Int
+
+// main
+sil @main : $@convention(c) sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer(Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> <Int8>>>) -> Int32 {
+bb0(Int32 {
+bb0(%0 : %0 : $Int32, $Int32, %1 : $%1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):
+>>>):
+  alloc_global @$s3add1aSivp                      // id:   alloc_global @$s3add1aSivp                      // id: %2
+  %3%2
+  %3 = global_addr @$s3add1aSivp : $ = global_addr @$s3add1aSivp : $*Int          // users: *Int          // users: %14, %6%14, %6
+  %4 = integer_literal
+  %4 = integer_literal $Builtin.Int64, 2           $Builtin.Int64, 2          // user: %5
+  // user: %5
+  %5 = struct %5 = struct $Int ($Int (%4 : $Builtin.Int64)%4 : $Builtin.Int64)          // user: %6
+          // user: %6
+  store %5 to   store %5 to %3 : $%3 : $*Int                          // id: *Int                          // id: %6
+  alloc_global @$s3add1bSivp%6
+  alloc_global @$s3add1bSivp                      // id: %7
+                      // id: %7
+  %8  %8 = global_addr @$s3add1bSivp :  = global_addr @$s3add1bSivp : $*Int          // users$*Int          // users: %15, %: %15, %11
+  %9 = integer_literal 11
+  %9 = integer_literal $Builtin.Int64, 3          // user$Builtin.Int64, 3          // user: %10: %10
+  %10 = struct 
+  %10 = struct $Int (%$Int (%9 : $Builtin.Int649 : $Builtin.Int64)         // user: %11)         // user: %11
+  store %10
+  store %10 to %8 :  to %8 : $*Int                         // id: $*Int                         // id: %11
+  alloc_global @%11
+  alloc_global @$s3add1cSivp                      // id: %12
+  $s3add1cSivp                      // id: %12
+  %13 = global_addr @$s3add1cSivp : %13 = global_addr @$s3add1cSivp : $*Int         // user: $*Int         // user: %18
+  %%18
+  %14 = load %14 = load %3 : $*Int3 : $*Int                           // user: %17                           // user: %17
+  %15 = load
+  %15 = load %8 :  %8 : $*Int                           // user: $*Int                           // user: %17
+  // function_ref %17
+  // function_ref add(_:_:)
+  %16 = add(_:_:)
+  %16 = function_ref @$s3addAAyS2i_SitF : $@conventionfunction_ref @$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> (thin) (Int, Int) -> Int // user: %17Int // user: %17
+  %17 = apply
+  %17 = apply %16(% %16(%14, %15) : 14, %15) : $@convention(thin) $@convention(thin) (Int, Int) -> Int // user(Int, Int) -> Int // user: %18
+  store : %18
+  store %17 to %%17 to %13 : $*Int13 : $*Int                        // id: %18                        // id: %18
+  %19 = integer_literal 
+  %19 = integer_literal $Builtin.Int32, 0         // $Builtin.Int32, 0         // user: %20
+  user: %20
+  %20 = struct $%20 = struct $Int32 (%19Int32 (%19 : $Builtin.Int32)       : $Builtin.Int32)      // user: %21
+// user: %21
+  return %20  return %20 : $Int32                              : $Int32                             // id: %21
+} // end sil function '// id: %21
+} // end sil function 'main'
+
+// add(_:_:)
+sil hidden main'
+
+// add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@convention(thin) (@$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> Int {
+// Int, Int) -> Int {
+// %0                                             // users: %0                                             // users: %4, %2
+// %4, %2
+// %1                                             // users: %%1                                             // users: %5, %3
+5, %3
+bb0(%bb0(%0 : $Int0 : $Int, %1 : , %1 : $Int):
+  debug_value$Int):
+  debug_value %0 :  %0 : $Int, let, name "a"$Int, let, name "a", argno 1   // id: , argno 1   // id: %2
+  debug_value %2
+  debug_value %1 : $%1 : $Int, let, name "b", argno 2Int, let, name "b", argno 2   // id: %3
+     // id: %3
+  %4 = struct_extract %4 = struct_extract %0 : $%0 : $Int, #Int._valueInt, #Int._value      // user: %7
+      // user: %7
+  %5 = struct_extract   %5 = struct_extract %1 : $%1 : $Int, #Int._value      // Int, #Int._value      // user: %7
+  user: %7
+  %6 = integer_literal $%6 = integer_literal $Builtin.Int1, -1          // user: Builtin.Int1, -1          // user: %7
+  %7%7
+  %7 = builtin "sadd = builtin "sadd_with_o_with_overflow_verflow_Int64"(Int64"(%4 : $Builtin.Int64%4 : $Builtin.Int64, %5 : , %5 : $Builtin.Int64, $Builtin.Int64, %6 : $Builtin.Int1%6 : $Builtin.Int1) : $(Builtin.Int64, ) : $(Builtin.Int64, Builtin.Int1) // users: %9Builtin.Int1) // users: %9, %8
+  %, %8
+  %8 = tuple_extract %8 = tuple_extract %7 : $7 : $(Builtin.Int64, Builtin.Int1), (Builtin.Int64, Builtin.Int1), 0 // user: %0 // user: %11
+  %911
+  %9 = tuple_extract %7 = tuple_extract %7 : $(Builtin.Int64, Builtin.Int1 : $(Builtin.Int64, Builtin.Int1), 1 // user: ), 1 // user: %10
+  cond_fail %10
+  cond_fail %9 : $%9 : $Builtin.Int1, "arithBuiltin.Int1, "arithmetic ovemetic overflow" rflow" // id: %10// id: %10
+  %11 = struct
+  %11 = struct $Int $Int (%8 :  (%8 : $Builtin.Int64)         // user$Builtin.Int64)         // user: %12
+  return: %12
+  return %11 : $Int %11 : $Int                               // id: %12                               // id: %12
+} // end sil function '$s3addAAyS2i_SitF'
+
+// 
+} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] @$sSi1poiyS2i_SitFZstatic Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $@convention(method) (Int,  : $@convention(method) (Int, Int, @thin Int.Type) -> Int {
+// Int, @thin Int.Type) -> Int {
+// %0                                             // user: %3%0                                             // user: %3
+// %1                                             
+// %1                                             // user: %4
+bb0(%// user: %4
+bb0(%0 : $0 : $Int, %1 : $Int, Int, %1 : $Int, %2 : $@thin %2 : $@thin Int.Type):
+  Int.Type):
+  %3 = struct_extract %3 = struct_extract %0 : $Int%0 : $Int, #Int._value      // user, #Int._value      // user: %6
+  : %6
+  %4 = struct_extract %1 : %4 = struct_extract %1 : $Int, #Int._value$Int, #Int._value      // user: %6
+  %5      // user: %6
+  %5 = integer_literal $Builtin.Int1, -1          // user: %6
+   = integer_literal $Builtin.Int1, -1          // user: %6
+  %6 = builtin "%6 = builtin "sadd_sadd_with_ovewith_overflow_Int6rflow_Int64"(%34"(%3 : $Builtin.Int64,  : $Builtin.Int64, %4 : $%4 : $Builtin.Int64, %5Builtin.Int64, %5 : $Builtin.Int1) :  : $Builtin.Int1) : $(Builtin.Int64, $(Builtin.Int64, Builtin.Int1) // users: %Builtin.Int1) // users: %8, %7
+8, %7
+  %7 = tuple_extract   %7 = tuple_extract %6 : $%6 : $(Builtin.Int64, Builtin.Int1), 0 // user: %10
+  %8 = tuple_extract %6(Builtin.Int64, Builtin.Int1), 0 // user: %10
+  %8 = tuple_extract %6 : $(Builtin.Int64, Builtin.Int1) : $(Builtin.Int64, Builtin.Int1), 1 // user: %9, 1 // user: %9
+  cond_fail %
+  cond_fail %8 : $Builtin.Int18 : $Builtin.Int1, "arithme, "arithmetic overfltic overflow" // id: %9ow" // id: %9
+  %10 = struct $
+  %10 = struct $Int (%7Int (%7 : $Builtin.Int64)         // user:  : $Builtin.Int64)         // user: %11
+  return %11
+  return %10 : $%10 : $Int                               // id: %11Int                               // id: %11
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// 
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// Int.init(_builtinIntegerLiteral:)
+sil Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(public_external [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (method) (Builtin.IntLiteral, @thin Int.Type) -> Builtin.IntLiteral, @thin Int.Type) -> Int {
+// %0Int {
+// %0                                             // user: %2                                             // user: %2
+bb0(
+bb0(%0 : $%0 : $Builtin.IntLiteral, %1Builtin.IntLiteral, %1 : $@thin Int.Type : $@thin Int.Type):
+  %2):
+  %2 = builtin "s_ = builtin "s_to_s_checkto_s_checked_trunc_ed_trunc_IntLiteIntLiteral_Int64"ral_Int64"(%0 : (%0 : $Builtin.IntLiteral) : $$Builtin.IntLiteral) : $(Builtin.Int64, Builtin.Int1) // (Builtin.Int64, Builtin.Int1) // user: %3
+  user: %3
+  %3 = tuple_extract %3 = tuple_extract %2 : $(%2 : $(Builtin.Int64, Builtin.Int1), 0 // Builtin.Int64, Builtin.Int1), 0 // user: %4
+  user: %4
+  %4 = struct %4 = struct $Int ($Int (%3 : $%3 : $Builtin.Int64)          // user: Builtin.Int64)          // user: %5
+  return %5
+  return %4 : $Int%4 : $Int                                // id: %5                                // id: %5
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+
+
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+
+*** SIL module before Address Lowering ***
+sil_stage canonical
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : *** SIL module before Address Lowering ***
+sil_stage canonical
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional$Int
+
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0( {
+bb0(%0 : %0 : $Int32, %$Int32, %1 : $UnsafeMutablePointer<1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>Optional<UnsafeMutablePointer<Int8>>>):
+  alloc_global @$s3add1aSivp):
+  alloc_global @$s3add1aSivp                      // id: %2
+                      // id: %2
+  %3 = global_addr @  %3 = global_addr @$s3add1aSivp : $*Int          // $s3add1aSivp : $*Int          // users: %14, users: %14, %6
+  %4%6
+  %4 = integer_literal $Builtin.Int64 = integer_literal $Builtin.Int64, 2          // user: %5, 2          // user: %5
+  %5 = 
+  %5 = struct $Int (struct $Int (%4 : $%4 : $Builtin.Int64)          // user: %Builtin.Int64)          // user: %6
+  store %56
+  store %5 to %3 :  to %3 : $*Int                          // $*Int                          // id: %6
+  alloc_global id: %6
+  alloc_global @$s3add1bSivp                      // id: %7@$s3add1bSivp                      // id: %7
+  %8 = global_addr
+  %8 = global_addr @$s3add1bSivp : $*Int          // users @$s3add1bSivp : $*Int          // users: %15, %11: %15, %11
+  %9 = 
+  %9 = integer_literal $Builtin.Int64, 3integer_literal $Builtin.Int64, 3          // user:           // user: %10
+  %%10
+  %10 = struct $10 = struct $Int (%9Int (%9 : $Builtin.Int64) : $Builtin.Int64)         // user: %11
+         // user: %11
+  store %10 to   store %10 to %8 : $%8 : $*Int                         *Int                         // id: %11// id: %11
+  alloc_global @$s3add1cSivp                      // id: 
+  alloc_global @$s3add1cSivp                      // id: %12
+  %%12
+  %13 = global_addr @$s3add1cSivp13 = global_addr @$s3add1cSivp : $*Int         // user:  : $*Int         // user: %18
+  %14%18
+  %14 = load %3 = load %3 : $*Int                            : $*Int                           // user: %17
+  // user: %17
+  %15 = load %15 = load %8 : $*%8 : $*Int                           // user: %Int                           // user: %17
+  // function_ref add(_:_:)
+  17
+  // function_ref add(_:_:)
+  %16 = function_ref @$s3addAAyS2i_SitF%16 = function_ref @$s3addAAyS2i_SitF : $@convention(thin) : $@convention(thin) (Int, Int) -> Int //  (Int, Int) -> Int // user: %17
+  user: %17
+  %17 = apply %%17 = apply %16(%14, 16(%14, %15) : $%15) : $@convention(thin) (Int, Int@convention(thin) (Int, Int) -> Int // user: %18) -> Int // user: %18
+  store %17
+  store %17 to %13 :  to %13 : $*Int                        // id: $*Int                        // id: %18
+  %%18
+  %19 = integer_literal $19 = integer_literal $Builtin.Int32, 0         // Builtin.Int32, 0         // user: %20
+  user: %20
+  %20 = struct %20 = struct $Int32 (%19$Int32 (%19 : $Builtin.Int32) : $Builtin.Int32)      // user: %21
+  return      // user: %21
+  return %20 :  %20 : $Int32$Int32                             // id: %21
+                             // id: %21
+} // end sil function 'main'
+
+// add(_:_:)} // end sil function 'main'
+
+// add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@convention(thin
+sil hidden @$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> Int {
+) (Int, Int) -> Int {
+// %0                                             // user// %0                                             // users: %4, s: %4, %2
+// %2
+// %1                                             // users: %1                                             // users: %5, %3%5, %3
+bb0(
+bb0(%0 : $Int%0 : $Int, %1 : , %1 : $Int):
+$Int):
+  debug_value %0  debug_value %0 : $Int, let, name " : $Int, let, name "a", argno 1   // id: %a", argno 1   // id: %2
+  debug_value 2
+  debug_value %1 : $Int%1 : $Int, let, name "b", argno 2   // , let, name "b", argno 2   // id: %3
+  id: %3
+  %4 = struct_extract %4 = struct_extract %0 : $Int%0 : $Int, #Int._value      // user: , #Int._value      // user: %7
+  %%7
+  %5 = struct_extract %5 = struct_extract %1 : $1 : $Int, #Int._value      // Int, #Int._value      // user: %7user: %7
+  %6 = integer_literal
+  %6 = integer_literal $Builtin.Int1, -1           $Builtin.Int1, -1          // user: %7
+// user: %7
+  %7 =   %7 = builtin "sadd_wbuiltin "sadd_with_oveith_overflow_Inrflow_Int64"(%t64"(%4 : $Builtin.Int644 : $Builtin.Int64, %5 : , %5 : $Builtin.Int64, $Builtin.Int64, %6 : $Builtin.Int1%6 : $Builtin.Int1) : $(Builtin.Int64, ) : $(Builtin.Int64, Builtin.Int1) // users: Builtin.Int1) // users: %9, %8
+  %9, %8
+  %8 = tuple_extract %7%8 = tuple_extract %7 : $(Builtin.Int64, Builtin.Int1 : $(Builtin.Int64, Builtin.Int1), 0 // user: ), 0 // user: %11
+  %9%11
+  %9 = tuple_extract %7 = tuple_extract %7 : $(Builtin.Int64, Builtin.Int1 : $(Builtin.Int64, Builtin.Int1), 1 // user: ), 1 // user: %10
+  cond_fail %10
+  cond_fail %9 : $%9 : $Builtin.Int1, "arithBuiltin.Int1, "arithmetic ovemetic overflow" // id: rflow" // id: %10
+  %11%10
+  %11 = struct $Int = struct $Int (%8 :  (%8 : $Builtin.Int64)         // user$Builtin.Int64)         // user: %12: %12
+  return %11
+  return %11 : $Int : $Int                               // id: %12                               // id: %12
+} // end sil function '$s3addAAyS2i_SitF'
+
+// 
+} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $@convention(method) (@$sSi1poiyS2i_SitFZ : $@convention(method) (Int, Int, @thin Int.Type) -> IntInt, Int, @thin Int.Type) -> Int {
+// %0                                              {
+// %0                                             // user: %3
+// // user: %3
+// %1                                             // user: %4%1                                             // user: %4
+bb0(
+bb0(%0 : $%0 : $Int, %1Int, %1 : $Int,  : $Int, %2 : $%2 : $@thin Int.Type):
+  @thin Int.Type):
+  %3 = struct_extract %0%3 = struct_extract %0 : $Int, # : $Int, #Int._value      // user: %Int._value      // user: %6
+  %4 = 6
+  %4 = struct_extract %1 : struct_extract %1 : $Int, #Int._value$Int, #Int._value      // user: %6
+      // user: %6
+  %5 = integer_literal   %5 = integer_literal $Builtin.Int1, -1          // user$Builtin.Int1, -1          // user: %6
+  %6: %6
+  %6 = builtin "sadd_w = builtin "sadd_with_overflith_overflow_Int64"ow_Int64"(%3 : (%3 : $Builtin.Int64, %$Builtin.Int64, %4 : $Builtin.Int644 : $Builtin.Int64, %5 : , %5 : $Builtin.Int1) : $$Builtin.Int1) : $(Builtin.Int64, Builtin.Int1) // (Builtin.Int64, Builtin.Int1) // users: %users: %8, %7
+8, %7
+  %7 = tuple_extract   %7 = tuple_extract %6 : $%6 : $(Builtin.Int64, Builtin.Int1), (Builtin.Int64, Builtin.Int1), 0 // user: %100 // user: %10
+  %8 = tuple_extract 
+  %8 = tuple_extract %6 : $%6 : $(Builtin.Int64, Builtin.Int1), (Builtin.Int64, Builtin.Int1), 1 // user: %91 // user: %9
+  cond_fail %8
+  cond_fail %8 : $Builtin.Int1,  : $Builtin.Int1, "arithm"arithmetic oveetic overflow" // id: rflow" // id: %9
+  %10%9
+  %10 = struct $Int ( = struct $Int (%7 : $%7 : $Builtin.Int64)         // user: Builtin.Int64)         // user: %11
+  return %11
+  return %10 : $%10 : $Int                               // id: %11Int                               // id: %11
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// 
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfCInt.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral,  : $@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int {
+// @thin Int.Type) -> Int {
+// %0                                             // user: %%0                                             // user: %2
+bb0(2
+bb0(%0 : $%0 : $Builtin.IntLiteral, %1Builtin.IntLiteral, %1 : $@thin Int.Type : $@thin Int.Type):
+  %2):
+  %2 = builtin "s_to_ = builtin "s_to_s_checkeds_checked_trunc_trunc_IntLite_IntLiteral_Int64ral_Int64"(%0"(%0 : $Builtin.IntLiteral : $Builtin.IntLiteral) : $(Builtin.Int64, ) : $(Builtin.Int64, Builtin.Int1) // user: %3Builtin.Int1) // user: %3
+  %3 = 
+  %3 = tuple_extract %2 : tuple_extract %2 : $(Builtin.Int64, Builtin.Int1)$(Builtin.Int64, Builtin.Int1), 0 // user: %, 0 // user: %4
+  %4 = struct 4
+  %4 = struct $Int (%$Int (%3 : $3 : $Builtin.Int64)          // user: Builtin.Int64)          // user: %5
+  return %5
+  return %4 : $%4 : $Int                                // id: %5Int                                // id: %5
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+
+
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+
+*** SIL module before IRGen Preparation ***
+sil_stage lowered
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main*** SIL module before IRGen Preparation ***
+sil_stage lowered
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>UnsafeMutablePointer<Int8>>>) -> Int32 {
+) -> Int32 {
+bb0(bb0(%0 : $%0 : $Int32, %Int32, %1 : $1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):
+  alloc_global >>):
+  alloc_global @$s3add1aSivp                      // id: %2@$s3add1aSivp                      // id: %2
+  %3 = 
+  %3 = global_addr @$s3add1aSivp : $*global_addr @$s3add1aSivp : $*Int          // users: %Int          // users: %14, %6
+14, %6
+  %4 = integer_literal   %4 = integer_literal $Builtin.Int64, 2          // user$Builtin.Int64, 2          // user: %5
+  %5 = : %5
+  %5 = struct $Int (struct $Int (%4 : $Builtin.Int64%4 : $Builtin.Int64)          // user: %6)          // user: %6
+  store %5
+  store %5 to %3 :  to %3 : $*Int                          // id: $*Int                          // id: %6
+  alloc_global @%6
+  alloc_global @$s3add1bSivp                      // id: %7
+$s3add1bSivp                      // id: %7
+  %8 = global_addr @  %8 = global_addr @$s3add1bSivp : $*Int          $s3add1bSivp : $*Int          // users: %15, // users: %15, %11
+  %%11
+  %9 = integer_literal 9 = integer_literal $Builtin.Int64, 3          $Builtin.Int64, 3          // user: %10
+// user: %10
+  %10 =   %10 = struct $Int (struct $Int (%9 : $%9 : $Builtin.Int64)         // user: Builtin.Int64)         // user: %11
+  store%11
+  store %10 to  %10 to %8 : $*%8 : $*Int                         // id: %11Int                         // id: %11
+  alloc_global @$s3add1cSivp                      // 
+  alloc_global @$s3add1cSivp                      // id: %12
+  id: %12
+  %13 = global_addr @$s3add1cSivp : %13 = global_addr @$s3add1cSivp : $*Int         // user: $*Int         // user: %18
+  %%18
+  %14 = load %14 = load %3 : $*Int3 : $*Int                           // user: %17                           // user: %17
+  %15 = load
+  %15 = load %8 :  %8 : $*Int                           // user: $*Int                           // user: %17
+  // function_ref %17
+  // function_ref add(_:_:)
+  %16add(_:_:)
+  %16 = function_ref @$s3addAAyS2i_SitF : $ = function_ref @$s3addAAyS2i_SitF : $@convention(thin) (Int, @convention(thin) (Int, Int) -> Int // user: %Int) -> Int // user: %17
+  %1717
+  %17 = apply %16( = apply %16(%14, %15%14, %15) : $@convention(thin)) : $@convention(thin) (Int, Int) -> Int //  (Int, Int) -> Int // user: %18
+  storeuser: %18
+  store %17 to  %17 to %13 : $*%13 : $*Int                        // id: %18Int                        // id: %18
+  %19 = 
+  %19 = integer_literal $Builtin.Int32, 0integer_literal $Builtin.Int32, 0         // user: %20
+         // user: %20
+  %20 = struct   %20 = struct $Int32 (%$Int32 (%19 : $19 : $Builtin.Int32)      // user: Builtin.Int32)      // user: %21
+  return %21
+  return %20 : $%20 : $Int32                             // id: %21Int32                             // id: %21
+} // end sil function 'main'
+
+// 
+} // end sil function 'main'
+
+// add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@conventionadd(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> (thin) (Int, Int) -> Int {
+// %0Int {
+// %0                                             // users: %4                                             // users: %4, %2, %2
+// %1
+// %1                                             // users: %5                                             // users: %5, %3
+bb, %3
+bb0(%00(%0 : $Int,  : $Int, %1 : $%1 : $Int):
+  debug_value Int):
+  debug_value %0 : $%0 : $Int, let, name "a", argno Int, let, name "a", argno 1   // id: %2
+1   // id: %2
+  debug_value %1  debug_value %1 : $Int, let : $Int, let, name "b", argno 2   // id: , name "b", argno 2   // id: %3
+  %4%3
+  %4 = struct_extract %0 :  = struct_extract %0 : $Int, #Int.$Int, #Int._value      // user: %7_value      // user: %7
+  %5 = struct_extract
+  %5 = struct_extract %1 :  %1 : $Int, #Int._value$Int, #Int._value      // user: %      // user: %7
+  %67
+  %6 = integer_literal $ = integer_literal $Builtin.Int1, -1          // user: Builtin.Int1, -1          // user: %7
+  %%7
+  %7 = builtin "sad7 = builtin "sadd_with_oved_with_overflow_Intrflow_Int64"(64"(%4 : $Builtin.Int64, %4 : $Builtin.Int64, %5 : $Builtin.Int64%5 : $Builtin.Int64, %6 : , %6 : $Builtin.Int1) : $$Builtin.Int1) : $(Builtin.Int64, Builtin.Int1) // (Builtin.Int64, Builtin.Int1) // users: %9, users: %9, %8
+  %8%8
+  %8 = tuple_extract %7 = tuple_extract %7 : $(Builtin.Int64,  : $(Builtin.Int64, Builtin.Int1), 0 // user: Builtin.Int1), 0 // user: %11
+  %%11
+  %9 = tuple_extract 9 = tuple_extract %7 : $%7 : $(Builtin.Int64, Builtin.Int1), (Builtin.Int64, Builtin.Int1), 1 // user: %101 // user: %10
+  cond_fail %9
+  cond_fail %9 : $Builtin.Int1,  : $Builtin.Int1, "arithmetic "arithmetic overflooverflow" // id: %w" // id: %10
+  %1110
+  %11 = struct $Int ( = struct $Int (%8 : $%8 : $Builtin.Int64)         // user: Builtin.Int64)         // user: %12
+  return %12
+  return %11 : $%11 : $Int                               // id: %12Int                               // id: %12
+} // end sil function '$s3addAAyS2i_SitF'
+
+// 
+} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $@convention(method@$sSi1poiyS2i_SitFZ : $@convention(method) (Int, Int, @thin Int) (Int, Int, @thin Int.Type) -> Int {
+// %.Type) -> Int {
+// %0                                             // user: %30                                             // user: %3
+// %1                                             // user
+// %1                                             // user: %4
+bb: %4
+bb0(%0(%0 : $Int0 : $Int, %1 : , %1 : $Int, $Int, %2 : $@thin %2 : $@thin Int.Type):
+  %Int.Type):
+  %3 = struct_extract %3 = struct_extract %0 : $0 : $Int, #Int._value      // Int, #Int._value      // user: %6
+  user: %6
+  %4 = struct_extract %4 = struct_extract %1 : $Int%1 : $Int, #Int._value      // user: , #Int._value      // user: %6
+  %%6
+  %5 = integer_literal $5 = integer_literal $Builtin.Int1, -1          // user: Builtin.Int1, -1          // user: %6
+  %6 = %6
+  %6 = builtin "sadd_wibuiltin "sadd_with_oveth_overflow_Int6rflow_Int64"(%34"(%3 : $Builtin.Int64,  : $Builtin.Int64, %4 : $%4 : $Builtin.Int64, %5Builtin.Int64, %5 : $Builtin.Int1) :  : $Builtin.Int1) : $(Builtin.Int64, Builtin.Int1) $(Builtin.Int64, Builtin.Int1) // users: %8, // users: %8, %7
+  %%7
+  %7 = tuple_extract %7 = tuple_extract %6 : $6 : $(Builtin.Int64, Builtin.Int1), 0(Builtin.Int64, Builtin.Int1), 0 // user: %10
+ // user: %10
+  %8 = tuple_extract   %8 = tuple_extract %6 : $%6 : $(Builtin.Int64, Builtin.Int1), (Builtin.Int64, Builtin.Int1), 1 // user: %91 // user: %9
+  cond_fail %8
+  cond_fail %8 : $Builtin.Int1,  : $Builtin.Int1, "arithm"arithmetic ovetic overflow"erflow" // id: %9 // id: %9
+  %10 = 
+  %10 = struct $Int (struct $Int (%7 : $%7 : $Builtin.Int64)         // user: %Builtin.Int64)         // user: %11
+  return 11
+  return %10 : $%10 : $Int                               // id: %Int                               // id: %11
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// 11
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral@$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int {
+// , @thin Int.Type) -> Int {
+// %0                                             // user: %0                                             // user: %2
+bb0%2
+bb0(%0 : (%0 : $Builtin.IntLiteral, %$Builtin.IntLiteral, %1 : $@thin Int1 : $@thin Int.Type):
+  %2.Type):
+  %2 = builtin "s_t = builtin "s_to_s_cheo_s_checked_trucked_trunc_IntLitnc_IntLiteral_Int6eral_Int64"(%04"(%0 : $Builtin.IntLiteral) :  : $Builtin.IntLiteral) : $(Builtin.Int64, Builtin.Int1) $(Builtin.Int64, Builtin.Int1) // user: %3
+  // user: %3
+  %3 = tuple_extract %3 = tuple_extract %2 : $%2 : $(Builtin.Int64, Builtin.Int1), 0(Builtin.Int64, Builtin.Int1), 0 // user: %4 // user: %4
+  %4 = 
+  %4 = struct $Int (struct $Int (%3 : $%3 : $Builtin.Int64)          // user: %Builtin.Int64)          // user: %5
+  return 5
+  return %4 : %4 : $Int                                $Int                                // id: %5
+} // end sil function '// id: %5
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+
+$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+
+  *** SIL module after #4, stage IRGen Preparation, pass 1: LoadableByAddress (loadable-address)
+sil_stage lowered
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @  *** SIL module after #4, stage IRGen Preparation, pass 1: LoadableByAddress (loadable-address)
+sil_stage lowered
+
+import Builtin
+import Swift
+import SwiftShims
+
+// a
+sil_global hidden [let] @$s3add1aSivp : $Int
+
+// b
+sil_global hidden [let] @$s3add1bSivp : $Int
+
+// c
+sil_global hidden [let] @$s3add1cSivp : $Int
+
+// main
+sil @main : $@convention(c) ($s3add1cSivp : $Int
+
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0(>>>) -> Int32 {
+bb0(%0 : $%0 : $Int32, %1Int32, %1 : $UnsafeMutablePointer<Optional< : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):UnsafeMutablePointer<Int8>>>):
+  alloc_global @$s3add1aSivp                      // id: 
+  alloc_global @$s3add1aSivp                      // id: %2
+  %%2
+  %3 = global_addr @$s3add1aSivp : 3 = global_addr @$s3add1aSivp : $*Int          // users: $*Int          // users: %14, %6%14, %6
+  %4 = integer_literal
+  %4 = integer_literal $Builtin.Int64, 2           $Builtin.Int64, 2          // user: %5
+  // user: %5
+  %5 = struct %5 = struct $Int (%4$Int (%4 : $Builtin.Int64) : $Builtin.Int64)          // user: %6
+          // user: %6
+  store %5 to   store %5 to %3 : $%3 : $*Int                          // id: *Int                          // id: %6
+  alloc_global %6
+  alloc_global @$s3add1bSivp                      // id: %7@$s3add1bSivp                      // id: %7
+  %8 = global_addr
+  %8 = global_addr @$s3add1bSivp : $*Int          // users:  @$s3add1bSivp : $*Int          // users: %15, %11%15, %11
+  %9 = integer_literal 
+  %9 = integer_literal $Builtin.Int64, 3          // $Builtin.Int64, 3          // user: %10
+  user: %10
+  %10 = struct $%10 = struct $Int (%9Int (%9 : $Builtin.Int64)          : $Builtin.Int64)         // user: %11
+// user: %11
+  store %  store %10 to %810 to %8 : $*Int                          : $*Int                         // id: %11
+  alloc_global// id: %11
+  alloc_global @$s3add1cSivp                      // id: %12 @$s3add1cSivp                      // id: %12
+  %13 = 
+  %13 = global_addr @$s3add1cSivp : $global_addr @$s3add1cSivp : $*Int         // user: *Int         // user: %18
+  %14%18
+  %14 = load %3 = load %3 : $*Int : $*Int                           // user: %17
+                           // user: %17
+  %15 = load   %15 = load %8 : $*%8 : $*Int                           // user: Int                           // user: %17
+  // function_ref %17
+  // function_ref add(_:_:)
+  %16add(_:_:)
+  %16 = function_ref @$s3addAAyS2i_SitF : $@convention(thin = function_ref @$s3addAAyS2i_SitF : $@convention(thin) (Int, Int) -> Int ) (Int, Int) -> Int // user: %17
+  // user: %17
+  %17 = apply %17 = apply %16(%14%16(%14, %15) : $, %15) : $@convention(thin) (Int, @convention(thin) (Int, Int) -> Int // user: %Int) -> Int // user: %18
+  store %1718
+  store %17 to %13 :  to %13 : $*Int                        // $*Int                        // id: %18
+  %19id: %18
+  %19 = integer_literal $Builtin.Int32, 0 = integer_literal $Builtin.Int32, 0         // user: %20
+         // user: %20
+  %20 = struct   %20 = struct $Int32 (%$Int32 (%19 : $19 : $Builtin.Int32)      // user: Builtin.Int32)      // user: %21
+  return %21
+  return %20 : $%20 : $Int32                             // id: %21Int32                             // id: %21
+} // end sil function 'main'
+
+// 
+} // end sil function 'main'
+
+// add(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@conventionadd(_:_:)
+sil hidden @$s3addAAyS2i_SitF : $@convention(thin) (Int(thin) (Int, Int) -> Int {
+// , Int) -> Int {
+// %0                                             // users: %0                                             // users: %4, %2%4, %2
+// %1                                             // user
+// %1                                             // users: %5, s: %5, %3
+%3
+bb0(bb0(%0 : $Int%0 : $Int, %1 : , %1 : $Int):
+$Int):
+  debug_value %  debug_value %0 : $Int0 : $Int, let, name "a", argno 1   // id: , let, name "a", argno 1   // id: %2
+  debug_value %2
+  debug_value %1 : $Int%1 : $Int, let, name "b", argno 2   // , let, name "b", argno 2   // id: %3
+  %4id: %3
+  %4 = struct_extract %0 :  = struct_extract %0 : $Int, #Int.$Int, #Int._value      // user: %7_value      // user: %7
+  %5 = struct_extract
+  %5 = struct_extract %1 %1 : $Int, # : $Int, #Int._value      // userInt._value      // user: %7
+: %7
+  %6 = integer_literal   %6 = integer_literal $Builtin.Int1, -1          // user: $Builtin.Int1, -1          // user: %7
+  %%7
+  %7 = builtin "7 = builtin "sadd_withsadd_with_overflow_overflow_Int64"(_Int64"(%4 : $%4 : $Builtin.Int64, %5Builtin.Int64, %5 : $Builtin.Int64,  : $Builtin.Int64, %6 : $%6 : $Builtin.Int1) : $(Builtin.Int1) : $(Builtin.Int64, Builtin.Int1) Builtin.Int64, Builtin.Int1) // users: %// users: %9, %8
+9, %8
+  %8 =   %8 = tuple_extract %7 : tuple_extract %7 : $(Builtin.Int64, Builtin.Int1)$(Builtin.Int64, Builtin.Int1), 0 // user: %, 0 // user: %11
+  %911
+  %9 = tuple_extract % = tuple_extract %7 : $(Builtin.Int647 : $(Builtin.Int64, Builtin.Int1), 1 // , Builtin.Int1), 1 // user: %10user: %10
+  cond_fail %9
+  cond_fail %9 : $Builtin.Int1,  : $Builtin.Int1, "arithm"arithmetic overfetic overflow" // id: %low" // id: %10
+  %1110
+  %11 = struct $Int ( = struct $Int (%8 : $%8 : $Builtin.Int64)         // user: Builtin.Int64)         // user: %12
+  return %12
+  return %11 : $%11 : $Int                               // id: %12Int                               // id: %12
+} // end sil function '$s3addAAyS2i_SitF'
+
+// 
+} // end sil function '$s3addAAyS2i_SitF'
+
+// static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] @static Int.+ infix(_:_:)
+sil public_external [transparent] [serialized] @$sSi1poiyS2i_SitFZ : $@convention(method) (Int$sSi1poiyS2i_SitFZ : $@convention(method) (Int, Int, @thin Int.Type) -> Int {
+// , Int, @thin Int.Type) -> Int {
+// %0                                             // user: %%0                                             // user: %3
+// %13
+// %1                                             // user: %4
+                                             // user: %4
+bb0(%bb0(%0 : $0 : $Int, %1Int, %1 : $Int,  : $Int, %2 : $%2 : $@thin Int.Type):
+  @thin Int.Type):
+  %3 = struct_extract %3 = struct_extract %0 : $%0 : $Int, #Int._value      // userInt, #Int._value      // user: %6
+  : %6
+  %4 = struct_extract %4 = struct_extract %1 : $%1 : $Int, #Int._value      // Int, #Int._value      // user: %6
+  user: %6
+  %5 = integer_literal $%5 = integer_literal $Builtin.Int1, -1          // user: Builtin.Int1, -1          // user: %6
+  %6%6
+  %6 = builtin "sadd = builtin "sadd_with_ove_with_overflow_Intrflow_Int64"(%364"(%3 : $Builtin.Int64,  : $Builtin.Int64, %4 : $%4 : $Builtin.Int64, %5Builtin.Int64, %5 : $Builtin.Int1) :  : $Builtin.Int1) : $(Builtin.Int64, Builtin.Int1)$(Builtin.Int64, Builtin.Int1) // users: %8 // users: %8, %7
+  , %7
+  %7 = tuple_extract %7 = tuple_extract %6 : %6 : $(Builtin.Int64, $(Builtin.Int64, Builtin.Int1), 0 // user: Builtin.Int1), 0 // user: %10
+  %%10
+  %8 = tuple_extract %8 = tuple_extract %6 : $6 : $(Builtin.Int64, Builtin.Int1), 1(Builtin.Int64, Builtin.Int1), 1 // user: %9
+ // user: %9
+  cond_fail %8  cond_fail %8 : $Builtin.Int1, " : $Builtin.Int1, "arithmearithmetic overtic overflow" // id: flow" // id: %9
+  %9
+  %10 = struct $%10 = struct $Int (%7 : Int (%7 : $Builtin.Int64)         // $Builtin.Int64)         // user: %11user: %11
+  return %10
+  return %10 : $Int                                : $Int                               // id: %11
+} // end sil function '// id: %11
+} // end sil function '$sSi1poiyS2i_SitFZ'
+
+// $sSi1poiyS2i_SitFZ'
+
+// Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfCInt.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral,  : $@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int {
+// @thin Int.Type) -> Int {
+// %0                                             // user: %%0                                             // user: %2
+bb0(2
+bb0(%0 : $Builtin.IntLiteral%0 : $Builtin.IntLiteral, %1 : , %1 : $@thin Int.Type)$@thin Int.Type):
+  %2:
+  %2 = builtin "s_to = builtin "s_to_s_checked_s_checked_trunc_In_trunc_IntLiteral_ItLiteral_Int64"(%nt64"(%0 : $Builtin.IntLiteral0 : $Builtin.IntLiteral) : $(Builtin.Int64, Builtin.Int1) : $(Builtin.Int64, Builtin.Int1) // user: %3) // user: %3
+  %3 = tuple_extract
+  %3 = tuple_extract %2 :  %2 : $(Builtin.Int64, Builtin.Int1)$(Builtin.Int64, Builtin.Int1), 0 // user: %4, 0 // user: %4
+  %4 = 
+  %4 = struct $Int (struct $Int (%3 : $%3 : $Builtin.Int64)          // user: %Builtin.Int64)          // user: %5
+  return %45
+  return %4 : $Int                                //  : $Int                                // id: %5
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfCid: %5
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+
+
+'
+
+
+
