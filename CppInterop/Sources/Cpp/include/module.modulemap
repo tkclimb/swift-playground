@@ -1,4 +1,5 @@
 module Cpp {
+  link "LLVMSupport"
+  umbrella header "mylib.h"
   export *
-  header "print.h"
 }

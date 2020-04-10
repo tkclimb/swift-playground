@@ -1,0 +1,5 @@
+/usr/bin/xcrun --sdk macosx --show-sdk-path
+/usr/bin/xcrun --sdk macosx --show-sdk-platform-path
+/usr/bin/xcrun --sdk macosx --find xctest
+/Library/Developer/Toolchains/swift-tensorflow-RELEASE-0.8.xctoolchain/usr/bin/swiftc -print-target-info
+c++!!
